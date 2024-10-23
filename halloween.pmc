@@ -138,7 +138,7 @@ Groups=main menu:1,macros:1,test:2045,...:2045,2:2137,3:2141,4:2144
 134|[End If]|EndIf|1|0|If_Statement|||||193|
 135|[End If]|EndIf|1|0|If_Statement|||||194|
 136|Compare Variables|X = 3|1|0|If_Statement|||||195|
-137|InputBox|m, Macros, macro made by @sosd35 with help by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||197|
+137|InputBox|m, Macros, macro made by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||197|
 138|[End If]|EndIf|1|0|If_Statement|||||198|
 139|Compare Variables|X = 4|1|0|If_Statement|||||199|
 140|InputBox|m, Macros, coming soon, 5, 320, 200, 111, 111, , 0, type here|1|0|InputBox|||||201|
