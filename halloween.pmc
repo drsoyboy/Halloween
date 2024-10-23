@@ -1,0 +1,2078 @@
+﻿[PMC Globals]|None||C:\Users\User\Desktop\macro\pet 99\main\Screenshot 2023-06-25 110542.ico
+[PMC Code v5.4.1]|F1||0|Window,2,Fast,0,1,Input,-1,-1,1|1|Main
+Context=None|
+Groups=main menu:1,macros:1,test:2045,...:2045,2:2137,3:2141,4:2144
+1|[Assign Variable]|temp := Accounts[1]|1|0|Variable|Expression||||1|
+2|StringLen|len, temp|1|0|StringLen|||||2|
+3|Compare Variables|len < 2|1|0|If_Statement|||||3|
+4|MultiAccount|Accounts := |1|0|Function|||||5|
+5|[End If]|EndIf|1|0|If_Statement|||||6|
+6|[LoopStart]|LoopStart|0|0|Loop|||||7|
+7|[Assign Variable]|test := Accounts[1]|1|0|Variable|Expression||||9|
+8|WinActivate||1|333|WinActivate||ahk_pid %test%|||10|
+9|If Window Not Active|AHK_PID %test%|1|0|If_Statement|||||12|
+10|[MsgBox]|Go to settings and correctly set your roblox IDs`nTo do so make sure you have all roblox tabs open to enable them`nType "2" for settings then type "1" to get the account(s)' id`nThen the accounts are set properly`n`nIf this same message pops up after doing the previous tasks`nGo to https://discord.gg/VpqY8kDD9v`nYou can also dm @drsoyboy on discord for further help`n`nCopyright 2024`, DrSoyBoy`, All rights reserved.|1|0|MsgBox|0||||14|
+11|[End If]|EndIf|1|0|If_Statement|||||27|
+12|[Assign Variable]|test := Accounts[3]|1|0|Variable|Expression||||28|
+13|[Assign Variable]|file := "C:\Users\101081383\Downloads"|1|0|Variable|Expression||||29|
+14|WinMove|%NAa%, %NAa%, 816, 638|1|0|WinMove||A|||30|
+15|[Assign Variable]|List := ["Macros","Settings","Credits","test"]|1|0|Variable|Expression||||31|
+16|Menu|X := List|1|0|Function|||||32|
+17|Compare Variables|X = 4|1|0|If_Statement|||||33|
+18|[LoopStart]|LoopStart|0|0|Loop|||||35|
+19|[Assign Variable]|i := 1|1|0|Variable|Expression||||37|
+20|autoRank|_null := Accounts[i]|1|0|Function|||||38|
+21|AFK|_null := Accounts,0|1|0|Function|||||39|
+22|[LoopEnd]|LoopEnd|1|0|Loop|||||40|
+23|[End If]|EndIf|1|0|If_Statement||||0x000000|41|
+24|Compare Variables|X = 1|1|0|If_Statement|||||42|
+25|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event (RNG Event)","Open Keys","Back","Next"]|1|0|Variable|Expression||||44|
+26|Menu|X := List|1|0|Function|||||45|
+27|Compare Variables|X = 1|1|0|If_Statement|||||46|
+28|[LoopStart]|LoopStart|0|0|Loop|||||48|
+29|DiamondSeed|_null := Accounts|1|0|Function|||||50|
+30|[LoopEnd]|LoopEnd|1|0|Loop|||||51|
+31|[End If]|EndIf|1|0|If_Statement||||0x000000|52|
+32|Compare Variables|X = 2|1|0|If_Statement|||||53|
+33|[LoopStart]|LoopStart|0|0|Loop|||||55|
+34|grind|_null := Accounts|1|0|Function|||||57|
+35|[LoopEnd]|LoopEnd|1|0|Loop|||||58|
+36|[End If]|EndIf|1|0|If_Statement||||0x000000|59|
+37|Compare Variables|X = 3|1|0|If_Statement|||||60|
+38|[LoopStart]|LoopStart|0|0|Loop|||||62|
+39|autoRank|_null := Accounts[i]|1|0|Function|||||64|
+40|[LoopEnd]|LoopEnd|1|0|Loop|||||65|
+41|[End If]|EndIf|1|0|If_Statement||||0x000000|66|
+42|Compare Variables|X = 4|1|0|If_Statement|||||67|
+43|[LoopStart]|LoopStart|0|0|Loop|||||69|
+44|EggGrind|_null := Accounts|1|0|Function|||||71|
+45|[LoopEnd]|LoopEnd|1|0|Loop|||||72|
+46|[End If]|EndIf|1|0|If_Statement||||0x000000|73|
+47|Compare Variables|X = 5|1|0|If_Statement|||||74|
+48|[LoopStart]|LoopStart|0|0|Loop|||||76|
+49|AFK|_null := Accounts|1|0|Function|||||78|
+50|[LoopEnd]|LoopEnd|1|0|Loop|||||79|
+51|[End If]|EndIf|1|0|If_Statement||||0x000000|80|
+52|Compare Variables|X = 6|1|0|If_Statement|||||81|
+53|[LoopStart]|LoopStart|0|0|Loop|||||83|
+54|CraftKeys|_null := |1|0|Function|||||85|
+55|[LoopEnd]|LoopEnd|1|0|Loop|||||86|
+56|[End If]|EndIf|1|0|If_Statement||||0x000000|87|
+57|Compare Variables|X = 7|1|0|If_Statement|||||88|
+58|[LoopStart]|LoopStart|0|0|Loop|||||90|
+59|event|_null := Accounts|1|0|Function|||||92|
+60|[LoopEnd]|LoopEnd|1|0|Loop|||||93|
+61|[End If]|EndIf|1|0|If_Statement||||0x000000|94|
+62|Compare Variables|X = 8|1|0|If_Statement|||||95|
+63|[LoopStart]|LoopStart|0|0|Loop|||||97|
+64|OpenKeys|_null := Accounts|1|0|Function|||||99|
+65|[LoopEnd]|LoopEnd|1|0|Loop|||||100|
+66|[End If]|EndIf|1|0|If_Statement||||0x000000|101|
+67|Compare Variables|X = 9|1|0|If_Statement|||||102|
+68|Break||1|0|Break|||||104|
+69|[End If]|EndIf|1|0|If_Statement||||0x000000|105|
+70|[Assign Variable]|List := ["Fuse Pets","Deep pool fishing","Secret Key(WIP)","Back"]|1|0|Variable|Expression||||106|
+71|Menu|X := List|1|0|Function|||||107|
+72|Compare Variables|X = 1|1|0|If_Statement|||||108|
+73|[LoopStart]|LoopStart|0|0|Loop|||||110|
+74|FusePets|_null := Accounts|1|0|Function|||||112|
+75|AFK|_null := Accounts,0|1|0|Function|||||113|
+76|[LoopEnd]|LoopEnd|1|0|Loop|||||114|
+77|[End If]|EndIf|1|0|If_Statement||||0x000000|115|
+78|Compare Variables|X = 2|1|0|If_Statement|||||116|
+79|[LoopStart]|LoopStart|0|0|Loop|||||118|
+80|Fishing|_null := Accounts|1|0|Function|||||120|
+81|AFK|_null := Accounts,0|1|0|Function|||||121|
+82|[LoopEnd]|LoopEnd|1|0|Loop|||||122|
+83|[End If]|EndIf|1|0|If_Statement||||0x000000|123|
+84|Compare Variables|X = 3|1|0|If_Statement|||||124|
+85|[LoopStart]|LoopStart|0|0|Loop|||||126|
+86|KeyOpen|_null := |1|0|Function|||||128|
+87|[LoopEnd]|LoopEnd|1|0|Loop|||||129|
+88|[End If]|EndIf|1|0|If_Statement||||0x000000|130|
+89|Compare Variables|X = 4|1|0|If_Statement|||||131|
+90|Break||1|0|Break|||||133|
+91|[End If]|EndIf|1|0|If_Statement||||0x000000|134|
+92|[End If]|EndIf|1|0|If_Statement||||0x000000|135|
+93|Compare Variables|X = 2|1|0|If_Statement|||||136|
+94|[Assign Variable]|List := ["Get account IDs","Set file","set keybinds","Back"]|1|0|Variable|Expression||||138|
+95|Menu|X := List|1|0|Function|||||139|
+96|Compare Variables|X = 1|1|0|If_Statement|||||140|
+97|MultiAccount|Accounts := |1|0|Function|||||142|
+98|[End If]|EndIf|1|0|If_Statement|||||143|
+99|Compare Variables|X = 2|1|0|If_Statement|||||144|
+100|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event egg(AFK all)","Open Keys","Back","Next"]|1|0|Variable|Expression||||146|
+101|Menu|X := List|1|0|Function|||||147|
+102|Compare Variables|X = 1|1|0|If_Statement|||||148|
+103|[End If]|EndIf|1|0|If_Statement||||0x000000|150|
+104|Compare Variables|X = 2|1|0|If_Statement|||||151|
+105|[End If]|EndIf|1|0|If_Statement||||0x000000|153|
+106|Compare Variables|X = 3|1|0|If_Statement|||||154|
+107|[End If]|EndIf|1|0|If_Statement||||0x000000|156|
+108|Compare Variables|X = 4|1|0|If_Statement|||||157|
+109|[End If]|EndIf|1|0|If_Statement||||0x000000|159|
+110|Compare Variables|X = 5|1|0|If_Statement|||||160|
+111|[End If]|EndIf|1|0|If_Statement||||0x000000|162|
+112|Compare Variables|X = 6|1|0|If_Statement|||||163|
+113|[End If]|EndIf|1|0|If_Statement||||0x000000|165|
+114|Compare Variables|X = 7|1|0|If_Statement|||||166|
+115|[End If]|EndIf|1|0|If_Statement||||0x000000|168|
+116|Compare Variables|X = 8|1|0|If_Statement|||||169|
+117|[End If]|EndIf|1|0|If_Statement||||0x000000|171|
+118|Compare Variables|X = 9|1|0|If_Statement|||||172|
+119|Break||1|0|Break|||||174|
+120|[End If]|EndIf|1|0|If_Statement||||0x000000|175|
+121|[Assign Variable]|List := ["Fuse Pets","deep pool fishing","Back"]|1|0|Variable|Expression||||176|
+122|Menu|X := List|1|0|Function|||||177|
+123|Compare Variables|X = 1|1|0|If_Statement|||||178|
+124|[End If]|EndIf|1|0|If_Statement||||0x000000|180|
+125|Compare Variables|X = 2|1|0|If_Statement|||||181|
+126|[End If]|EndIf|1|0|If_Statement||||0x000000|183|
+127|[End If]|EndIf|1|0|If_Statement|||||184|
+128|Compare Variables|X = 3|1|0|If_Statement|||||185|
+129|Keybinds|_null := |1|0|Function|||||187|
+130|[Assign Variable]|x := 0|1|0|Variable|Expression||||188|
+131|[End If]|EndIf|1|0|If_Statement|||||189|
+132|Compare Variables|X = 4|1|0|If_Statement|||||190|
+133|[Assign Variable]|x := 0|1|0|Variable|Expression||||192|
+134|[End If]|EndIf|1|0|If_Statement|||||193|
+135|[End If]|EndIf|1|0|If_Statement|||||194|
+136|Compare Variables|X = 3|1|0|If_Statement|||||195|
+137|InputBox|m, Macros, macro made by @sosd35 with help by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||197|
+138|[End If]|EndIf|1|0|If_Statement|||||198|
+139|Compare Variables|X = 4|1|0|If_Statement|||||199|
+140|InputBox|m, Macros, coming soon, 5, 320, 200, 111, 111, , 0, type here|1|0|InputBox|||||201|
+141|[End If]|EndIf|1|0|If_Statement|||||202|
+0142|[MsgBox]|% Accounts[1]|1|0|MsgBox|0||||203|
+143|[LoopEnd]|LoopEnd|1|0|Loop|||||205|
+0144|ZoneTP|_null := "spawn"|1|0|Function|||||207|
+0145|ZoneTP|_null := "spawn"|1|0|Function|||||209|
+0146|Break||1|0|Break|||||210|
+147|[Assign Variable]|temp := Accounts[1]|1|0|Variable|Expression||||211|
+148|StringLen|len, temp|1|0|StringLen|||||213|
+149|Compare Variables|len < 2|1|0|If_Statement|||||214|
+150|MultiAccount|Accounts := |1|0|Function|||||216|
+151|[End If]|EndIf|1|0|If_Statement|||||217|
+152|[LoopStart]|LoopStart|0|0|Loop|||||218|
+153|[Assign Variable]|test := Accounts[1]|1|0|Variable|Expression||||220|
+154|WinActivate||1|333|WinActivate||ahk_pid %test%|||221|
+155|If Window Not Active|AHK_PID %test%|1|0|If_Statement|||||223|
+156|[MsgBox]|Go to settings and correctly set your roblox IDs`nTo do so make sure you have all roblox tabs open to enable them`nType "2" for settings then type "1" to get the account(s)' id`nThen the accounts are set properly`n`nIf this same message pops up after doing the previous tasks`nGo to https://discord.gg/VpqY8kDD9v`nYou can also dm @the_cameraman_sos on discord for further help`n`nCopyright 2024`, DrSoyBoy and sosd35`, All rights reserved.|1|0|MsgBox|0||||225|
+157|[End If]|EndIf|1|0|If_Statement|||||238|
+158|[Assign Variable]|test := Accounts[3]|1|0|Variable|Expression||||239|
+159|[Assign Variable]|file := "C:\Users\101081383\Downloads"|1|0|Variable|Expression||||240|
+160|WinMove|%NAa%, %NAa%, 816, 638|1|0|WinMove||A|||241|
+161|[Assign Variable]|List := ["Macros","Settings","Credits","test"]|1|0|Variable|Expression||||242|
+162|Menu|X := List|1|0|Function|||||243|
+163|Compare Variables|X = 4|1|0|If_Statement|||||244|
+164|[LoopStart]|LoopStart|0|0|Loop|||||246|
+165|[Assign Variable]|i := 1|1|0|Variable|Expression||||248|
+166|autoRank|_null := Accounts[i]|1|0|Function|||||249|
+167|AFK|_null := Accounts,0|1|0|Function|||||250|
+168|[LoopEnd]|LoopEnd|1|0|Loop|||||251|
+169|[End If]|EndIf|1|0|If_Statement||||0x000000|252|
+170|Compare Variables|X = 1|1|0|If_Statement|||||253|
+171|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event (RNG Event)","Open Keys","Back","Next"]|1|0|Variable|Expression||||255|
+172|Menu|X := List|1|0|Function|||||256|
+173|Compare Variables|X = 1|1|0|If_Statement|||||257|
+174|[LoopStart]|LoopStart|0|0|Loop|||||259|
+175|DiamondSeed|_null := Accounts|1|0|Function|||||261|
+176|[LoopEnd]|LoopEnd|1|0|Loop|||||262|
+177|[End If]|EndIf|1|0|If_Statement||||0x000000|263|
+178|Compare Variables|X = 2|1|0|If_Statement|||||264|
+179|[LoopStart]|LoopStart|0|0|Loop|||||266|
+180|grind|_null := Accounts|1|0|Function|||||268|
+181|[LoopEnd]|LoopEnd|1|0|Loop|||||269|
+182|[End If]|EndIf|1|0|If_Statement||||0x000000|270|
+183|Compare Variables|X = 3|1|0|If_Statement|||||271|
+184|[LoopStart]|LoopStart|0|0|Loop|||||273|
+185|autoRank|_null := Accounts[i]|1|0|Function|||||275|
+186|[LoopEnd]|LoopEnd|1|0|Loop|||||276|
+187|[End If]|EndIf|1|0|If_Statement||||0x000000|277|
+188|Compare Variables|X = 4|1|0|If_Statement|||||278|
+189|[LoopStart]|LoopStart|0|0|Loop|||||280|
+190|EggGrind|_null := Accounts|1|0|Function|||||282|
+191|[LoopEnd]|LoopEnd|1|0|Loop|||||283|
+192|[End If]|EndIf|1|0|If_Statement||||0x000000|284|
+193|Compare Variables|X = 5|1|0|If_Statement|||||285|
+194|[LoopStart]|LoopStart|0|0|Loop|||||287|
+195|AFK|_null := Accounts|1|0|Function|||||289|
+196|[LoopEnd]|LoopEnd|1|0|Loop|||||290|
+197|[End If]|EndIf|1|0|If_Statement||||0x000000|291|
+198|Compare Variables|X = 6|1|0|If_Statement|||||292|
+199|[LoopStart]|LoopStart|0|0|Loop|||||294|
+200|CraftKeys|_null := |1|0|Function|||||296|
+201|[LoopEnd]|LoopEnd|1|0|Loop|||||297|
+202|[End If]|EndIf|1|0|If_Statement||||0x000000|298|
+203|Compare Variables|X = 7|1|0|If_Statement|||||299|
+204|[LoopStart]|LoopStart|0|0|Loop|||||301|
+205|event|_null := Accounts|1|0|Function|||||303|
+206|[LoopEnd]|LoopEnd|1|0|Loop|||||304|
+207|[End If]|EndIf|1|0|If_Statement||||0x000000|305|
+208|Compare Variables|X = 8|1|0|If_Statement|||||306|
+209|[LoopStart]|LoopStart|0|0|Loop|||||308|
+210|OpenKeys|_null := Accounts|1|0|Function|||||310|
+211|[LoopEnd]|LoopEnd|1|0|Loop|||||311|
+212|[End If]|EndIf|1|0|If_Statement||||0x000000|312|
+213|Compare Variables|X = 9|1|0|If_Statement|||||313|
+214|Break||1|0|Break|||||315|
+215|[End If]|EndIf|1|0|If_Statement||||0x000000|316|
+216|[Assign Variable]|List := ["Fuse Pets","Deep pool fishing","Secret Key(WIP)","Back"]|1|0|Variable|Expression||||317|
+217|Menu|X := List|1|0|Function|||||318|
+218|Compare Variables|X = 1|1|0|If_Statement|||||319|
+219|[LoopStart]|LoopStart|0|0|Loop|||||321|
+220|FusePets|_null := Accounts|1|0|Function|||||323|
+221|AFK|_null := Accounts,0|1|0|Function|||||324|
+222|[LoopEnd]|LoopEnd|1|0|Loop|||||325|
+223|[End If]|EndIf|1|0|If_Statement||||0x000000|326|
+224|Compare Variables|X = 2|1|0|If_Statement|||||327|
+225|[LoopStart]|LoopStart|0|0|Loop|||||329|
+226|Fishing|_null := Accounts|1|0|Function|||||331|
+227|AFK|_null := Accounts,0|1|0|Function|||||332|
+228|[LoopEnd]|LoopEnd|1|0|Loop|||||333|
+229|[End If]|EndIf|1|0|If_Statement||||0x000000|334|
+230|Compare Variables|X = 3|1|0|If_Statement|||||335|
+231|[LoopStart]|LoopStart|0|0|Loop|||||337|
+232|KeyOpen|_null := |1|0|Function|||||339|
+233|[LoopEnd]|LoopEnd|1|0|Loop|||||340|
+234|[End If]|EndIf|1|0|If_Statement||||0x000000|341|
+235|Compare Variables|X = 4|1|0|If_Statement|||||342|
+236|Break||1|0|Break|||||344|
+237|[End If]|EndIf|1|0|If_Statement||||0x000000|345|
+238|[End If]|EndIf|1|0|If_Statement||||0x000000|346|
+239|Compare Variables|X = 2|1|0|If_Statement|||||347|
+240|[Assign Variable]|List := ["Get account IDs","Set file","set keybinds","Back"]|1|0|Variable|Expression||||349|
+241|Menu|X := List|1|0|Function|||||350|
+242|Compare Variables|X = 1|1|0|If_Statement|||||351|
+243|MultiAccount|Accounts := |1|0|Function|||||353|
+244|[End If]|EndIf|1|0|If_Statement|||||354|
+245|Compare Variables|X = 2|1|0|If_Statement|||||355|
+246|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event egg(AFK all)","Open Keys","Back","Next"]|1|0|Variable|Expression||||357|
+247|Menu|X := List|1|0|Function|||||358|
+248|Compare Variables|X = 1|1|0|If_Statement|||||359|
+249|[End If]|EndIf|1|0|If_Statement||||0x000000|361|
+250|Compare Variables|X = 2|1|0|If_Statement|||||362|
+251|[End If]|EndIf|1|0|If_Statement||||0x000000|364|
+252|Compare Variables|X = 3|1|0|If_Statement|||||365|
+253|[End If]|EndIf|1|0|If_Statement||||0x000000|367|
+254|Compare Variables|X = 4|1|0|If_Statement|||||368|
+255|[End If]|EndIf|1|0|If_Statement||||0x000000|370|
+256|Compare Variables|X = 5|1|0|If_Statement|||||371|
+257|[End If]|EndIf|1|0|If_Statement||||0x000000|373|
+258|Compare Variables|X = 6|1|0|If_Statement|||||374|
+259|[End If]|EndIf|1|0|If_Statement||||0x000000|376|
+260|Compare Variables|X = 7|1|0|If_Statement|||||377|
+261|[End If]|EndIf|1|0|If_Statement||||0x000000|379|
+262|Compare Variables|X = 8|1|0|If_Statement|||||380|
+263|[End If]|EndIf|1|0|If_Statement||||0x000000|382|
+264|Compare Variables|X = 9|1|0|If_Statement|||||383|
+265|Break||1|0|Break|||||385|
+266|[End If]|EndIf|1|0|If_Statement||||0x000000|386|
+267|[Assign Variable]|List := ["Fuse Pets","deep pool fishing","Back"]|1|0|Variable|Expression||||387|
+268|Menu|X := List|1|0|Function|||||388|
+269|Compare Variables|X = 1|1|0|If_Statement|||||389|
+270|[End If]|EndIf|1|0|If_Statement||||0x000000|391|
+271|Compare Variables|X = 2|1|0|If_Statement|||||392|
+272|[End If]|EndIf|1|0|If_Statement||||0x000000|394|
+273|[End If]|EndIf|1|0|If_Statement|||||395|
+274|Compare Variables|X = 3|1|0|If_Statement|||||396|
+275|Keybinds|_null := |1|0|Function|||||398|
+276|[Assign Variable]|x := 0|1|0|Variable|Expression||||399|
+277|[End If]|EndIf|1|0|If_Statement|||||400|
+278|Compare Variables|X = 4|1|0|If_Statement|||||401|
+279|[Assign Variable]|x := 0|1|0|Variable|Expression||||403|
+280|[End If]|EndIf|1|0|If_Statement|||||404|
+281|[End If]|EndIf|1|0|If_Statement|||||405|
+282|Compare Variables|X = 3|1|0|If_Statement|||||406|
+283|InputBox|m, Macros, macro made by @sosd35 with help by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||408|
+284|[End If]|EndIf|1|0|If_Statement|||||409|
+285|Compare Variables|X = 4|1|0|If_Statement|||||410|
+286|InputBox|m, Macros, coming soon, 5, 320, 200, 111, 111, , 0, type here|1|0|InputBox|||||412|
+287|[End If]|EndIf|1|0|If_Statement|||||413|
+0288|[MsgBox]|% Accounts[1]|1|0|MsgBox|0||||414|
+289|[LoopEnd]|LoopEnd|1|0|Loop|||||416|
+0290|Break||1|0|Break|||||418|
+0291|ZoneTP|_null := "spawn"|1|0|Function|||||420|
+0292|Break||1|0|Break|||||421|
+293|[Assign Variable]|temp := Accounts[1]|1|0|Variable|Expression||||422|
+294|StringLen|len, temp|1|0|StringLen|||||424|
+295|Compare Variables|len < 2|1|0|If_Statement|||||425|
+296|MultiAccount|Accounts := |1|0|Function|||||427|
+297|[End If]|EndIf|1|0|If_Statement|||||428|
+298|[LoopStart]|LoopStart|0|0|Loop|||||429|
+299|[Assign Variable]|test := Accounts[1]|1|0|Variable|Expression||||431|
+300|WinActivate||1|333|WinActivate||ahk_pid %test%|||432|
+301|If Window Not Active|AHK_PID %test%|1|0|If_Statement|||||434|
+302|[MsgBox]|Go to settings and correctly set your roblox IDs`nTo do so make sure you have all roblox tabs open to enable them`nType "2" for settings then type "1" to get the account(s)' id`nThen the accounts are set properly`n`nIf this same message pops up after doing the previous tasks`nGo to https://discord.gg/VpqY8kDD9v`nYou can also dm @the_cameraman_sos on discord for further help`n`nCopyright 2024`, DrSoyBoy and sosd35`, All rights reserved.|1|0|MsgBox|0||||436|
+303|[End If]|EndIf|1|0|If_Statement|||||449|
+304|[Assign Variable]|test := Accounts[3]|1|0|Variable|Expression||||450|
+305|[Assign Variable]|file := "C:\Users\101081383\Downloads"|1|0|Variable|Expression||||451|
+306|WinMove|%NAa%, %NAa%, 816, 638|1|0|WinMove||A|||452|
+307|[Assign Variable]|List := ["Macros","Settings","Credits","test"]|1|0|Variable|Expression||||453|
+308|Menu|X := List|1|0|Function|||||454|
+309|Compare Variables|X = 4|1|0|If_Statement|||||455|
+310|[LoopStart]|LoopStart|0|0|Loop|||||457|
+311|[Assign Variable]|i := 1|1|0|Variable|Expression||||459|
+312|autoRank|_null := Accounts[i]|1|0|Function|||||460|
+313|AFK|_null := Accounts,0|1|0|Function|||||461|
+314|[LoopEnd]|LoopEnd|1|0|Loop|||||462|
+315|[End If]|EndIf|1|0|If_Statement||||0x000000|463|
+316|Compare Variables|X = 1|1|0|If_Statement|||||464|
+317|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event (RNG Event)","Open Keys","Back","Next"]|1|0|Variable|Expression||||466|
+318|Menu|X := List|1|0|Function|||||467|
+319|Compare Variables|X = 1|1|0|If_Statement|||||468|
+320|[LoopStart]|LoopStart|0|0|Loop|||||470|
+321|DiamondSeed|_null := Accounts|1|0|Function|||||472|
+322|[LoopEnd]|LoopEnd|1|0|Loop|||||473|
+323|[End If]|EndIf|1|0|If_Statement||||0x000000|474|
+324|Compare Variables|X = 2|1|0|If_Statement|||||475|
+325|[LoopStart]|LoopStart|0|0|Loop|||||477|
+326|grind|_null := Accounts|1|0|Function|||||479|
+327|[LoopEnd]|LoopEnd|1|0|Loop|||||480|
+328|[End If]|EndIf|1|0|If_Statement||||0x000000|481|
+329|Compare Variables|X = 3|1|0|If_Statement|||||482|
+330|[LoopStart]|LoopStart|0|0|Loop|||||484|
+331|autoRank|_null := Accounts[i]|1|0|Function|||||486|
+332|[LoopEnd]|LoopEnd|1|0|Loop|||||487|
+333|[End If]|EndIf|1|0|If_Statement||||0x000000|488|
+334|Compare Variables|X = 4|1|0|If_Statement|||||489|
+335|[LoopStart]|LoopStart|0|0|Loop|||||491|
+336|EggGrind|_null := Accounts|1|0|Function|||||493|
+337|[LoopEnd]|LoopEnd|1|0|Loop|||||494|
+338|[End If]|EndIf|1|0|If_Statement||||0x000000|495|
+339|Compare Variables|X = 5|1|0|If_Statement|||||496|
+340|[LoopStart]|LoopStart|0|0|Loop|||||498|
+341|AFK|_null := Accounts|1|0|Function|||||500|
+342|[LoopEnd]|LoopEnd|1|0|Loop|||||501|
+343|[End If]|EndIf|1|0|If_Statement||||0x000000|502|
+344|Compare Variables|X = 6|1|0|If_Statement|||||503|
+345|[LoopStart]|LoopStart|0|0|Loop|||||505|
+346|CraftKeys|_null := |1|0|Function|||||507|
+347|[LoopEnd]|LoopEnd|1|0|Loop|||||508|
+348|[End If]|EndIf|1|0|If_Statement||||0x000000|509|
+349|Compare Variables|X = 7|1|0|If_Statement|||||510|
+350|[LoopStart]|LoopStart|0|0|Loop|||||512|
+351|event|_null := Accounts|1|0|Function|||||514|
+352|[LoopEnd]|LoopEnd|1|0|Loop|||||515|
+353|[End If]|EndIf|1|0|If_Statement||||0x000000|516|
+354|Compare Variables|X = 8|1|0|If_Statement|||||517|
+355|[LoopStart]|LoopStart|0|0|Loop|||||519|
+356|OpenKeys|_null := Accounts|1|0|Function|||||521|
+357|[LoopEnd]|LoopEnd|1|0|Loop|||||522|
+358|[End If]|EndIf|1|0|If_Statement||||0x000000|523|
+359|Compare Variables|X = 9|1|0|If_Statement|||||524|
+360|Break||1|0|Break|||||526|
+361|[End If]|EndIf|1|0|If_Statement||||0x000000|527|
+362|[Assign Variable]|List := ["Fuse Pets","Deep pool fishing","Secret Key(WIP)","Back"]|1|0|Variable|Expression||||528|
+363|Menu|X := List|1|0|Function|||||529|
+364|Compare Variables|X = 1|1|0|If_Statement|||||530|
+365|[LoopStart]|LoopStart|0|0|Loop|||||532|
+366|FusePets|_null := Accounts|1|0|Function|||||534|
+367|AFK|_null := Accounts,0|1|0|Function|||||535|
+368|[LoopEnd]|LoopEnd|1|0|Loop|||||536|
+369|[End If]|EndIf|1|0|If_Statement||||0x000000|537|
+370|Compare Variables|X = 2|1|0|If_Statement|||||538|
+371|[LoopStart]|LoopStart|0|0|Loop|||||540|
+372|Fishing|_null := Accounts|1|0|Function|||||542|
+373|AFK|_null := Accounts,0|1|0|Function|||||543|
+374|[LoopEnd]|LoopEnd|1|0|Loop|||||544|
+375|[End If]|EndIf|1|0|If_Statement||||0x000000|545|
+376|Compare Variables|X = 3|1|0|If_Statement|||||546|
+377|[LoopStart]|LoopStart|0|0|Loop|||||548|
+378|KeyOpen|_null := |1|0|Function|||||550|
+379|[LoopEnd]|LoopEnd|1|0|Loop|||||551|
+380|[End If]|EndIf|1|0|If_Statement||||0x000000|552|
+381|Compare Variables|X = 4|1|0|If_Statement|||||553|
+382|Break||1|0|Break|||||555|
+383|[End If]|EndIf|1|0|If_Statement||||0x000000|556|
+384|[End If]|EndIf|1|0|If_Statement||||0x000000|557|
+385|Compare Variables|X = 2|1|0|If_Statement|||||558|
+386|[Assign Variable]|List := ["Get account IDs","Set file","set keybinds","Back"]|1|0|Variable|Expression||||560|
+387|Menu|X := List|1|0|Function|||||561|
+388|Compare Variables|X = 1|1|0|If_Statement|||||562|
+389|MultiAccount|Accounts := |1|0|Function|||||564|
+390|[End If]|EndIf|1|0|If_Statement|||||565|
+391|Compare Variables|X = 2|1|0|If_Statement|||||566|
+392|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event egg(AFK all)","Open Keys","Back","Next"]|1|0|Variable|Expression||||568|
+393|Menu|X := List|1|0|Function|||||569|
+394|Compare Variables|X = 1|1|0|If_Statement|||||570|
+395|[End If]|EndIf|1|0|If_Statement||||0x000000|572|
+396|Compare Variables|X = 2|1|0|If_Statement|||||573|
+397|[End If]|EndIf|1|0|If_Statement||||0x000000|575|
+398|Compare Variables|X = 3|1|0|If_Statement|||||576|
+399|[End If]|EndIf|1|0|If_Statement||||0x000000|578|
+400|Compare Variables|X = 4|1|0|If_Statement|||||579|
+401|[End If]|EndIf|1|0|If_Statement||||0x000000|581|
+402|Compare Variables|X = 5|1|0|If_Statement|||||582|
+403|[End If]|EndIf|1|0|If_Statement||||0x000000|584|
+404|Compare Variables|X = 6|1|0|If_Statement|||||585|
+405|[End If]|EndIf|1|0|If_Statement||||0x000000|587|
+406|Compare Variables|X = 7|1|0|If_Statement|||||588|
+407|[End If]|EndIf|1|0|If_Statement||||0x000000|590|
+408|Compare Variables|X = 8|1|0|If_Statement|||||591|
+409|[End If]|EndIf|1|0|If_Statement||||0x000000|593|
+410|Compare Variables|X = 9|1|0|If_Statement|||||594|
+411|Break||1|0|Break|||||596|
+412|[End If]|EndIf|1|0|If_Statement||||0x000000|597|
+413|[Assign Variable]|List := ["Fuse Pets","deep pool fishing","Back"]|1|0|Variable|Expression||||598|
+414|Menu|X := List|1|0|Function|||||599|
+415|Compare Variables|X = 1|1|0|If_Statement|||||600|
+416|[End If]|EndIf|1|0|If_Statement||||0x000000|602|
+417|Compare Variables|X = 2|1|0|If_Statement|||||603|
+418|[End If]|EndIf|1|0|If_Statement||||0x000000|605|
+419|[End If]|EndIf|1|0|If_Statement|||||606|
+420|Compare Variables|X = 3|1|0|If_Statement|||||607|
+421|Keybinds|_null := |1|0|Function|||||609|
+422|[Assign Variable]|x := 0|1|0|Variable|Expression||||610|
+423|[End If]|EndIf|1|0|If_Statement|||||611|
+424|Compare Variables|X = 4|1|0|If_Statement|||||612|
+425|[Assign Variable]|x := 0|1|0|Variable|Expression||||614|
+426|[End If]|EndIf|1|0|If_Statement|||||615|
+427|[End If]|EndIf|1|0|If_Statement|||||616|
+428|Compare Variables|X = 3|1|0|If_Statement|||||617|
+429|InputBox|m, Macros, macro made by @sosd35 with help by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||619|
+430|[End If]|EndIf|1|0|If_Statement|||||620|
+431|Compare Variables|X = 4|1|0|If_Statement|||||621|
+432|InputBox|m, Macros, coming soon, 5, 320, 200, 111, 111, , 0, type here|1|0|InputBox|||||623|
+433|[End If]|EndIf|1|0|If_Statement|||||624|
+0434|[MsgBox]|% Accounts[1]|1|0|MsgBox|0||||625|
+435|[LoopEnd]|LoopEnd|1|0|Loop|||||627|
+436|[Assign Variable]|temp := Accounts[1]|1|0|Variable|Expression||||629|
+0437|ZoneTP|_null := "spawn"|1|0|Function|||||630|
+0438|Break||1|0|Break|||||632|
+439|[Assign Variable]|temp := Accounts[1]|1|0|Variable|Expression||||633|
+440|StringLen|len, temp|1|0|StringLen|||||635|
+441|Compare Variables|len < 2|1|0|If_Statement|||||636|
+442|MultiAccount|Accounts := |1|0|Function|||||638|
+443|[End If]|EndIf|1|0|If_Statement|||||639|
+444|[LoopStart]|LoopStart|0|0|Loop|||||640|
+445|[Assign Variable]|test := Accounts[1]|1|0|Variable|Expression||||642|
+446|WinActivate||1|333|WinActivate||ahk_pid %test%|||643|
+447|If Window Not Active|AHK_PID %test%|1|0|If_Statement|||||645|
+448|[MsgBox]|Go to settings and correctly set your roblox IDs`nTo do so make sure you have all roblox tabs open to enable them`nType "2" for settings then type "1" to get the account(s)' id`nThen the accounts are set properly`n`nIf this same message pops up after doing the previous tasks`nGo to https://discord.gg/VpqY8kDD9v`nYou can also dm @the_cameraman_sos on discord for further help`n`nCopyright 2024`, DrSoyBoy and sosd35`, All rights reserved.|1|0|MsgBox|0||||647|
+449|[End If]|EndIf|1|0|If_Statement|||||660|
+450|[Assign Variable]|test := Accounts[3]|1|0|Variable|Expression||||661|
+451|[Assign Variable]|file := "C:\Users\101081383\Downloads"|1|0|Variable|Expression||||662|
+452|WinMove|%NAa%, %NAa%, 816, 638|1|0|WinMove||A|||663|
+453|[Assign Variable]|List := ["Macros","Settings","Credits","test"]|1|0|Variable|Expression||||664|
+454|Menu|X := List|1|0|Function|||||665|
+455|Compare Variables|X = 4|1|0|If_Statement|||||666|
+456|[LoopStart]|LoopStart|0|0|Loop|||||668|
+457|[Assign Variable]|i := 1|1|0|Variable|Expression||||670|
+458|autoRank|_null := Accounts[i]|1|0|Function|||||671|
+459|AFK|_null := Accounts,0|1|0|Function|||||672|
+460|[LoopEnd]|LoopEnd|1|0|Loop|||||673|
+461|[End If]|EndIf|1|0|If_Statement||||0x000000|674|
+462|Compare Variables|X = 1|1|0|If_Statement|||||675|
+463|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event (RNG Event)","Open Keys","Back","Next"]|1|0|Variable|Expression||||677|
+464|Menu|X := List|1|0|Function|||||678|
+465|Compare Variables|X = 1|1|0|If_Statement|||||679|
+466|[LoopStart]|LoopStart|0|0|Loop|||||681|
+467|DiamondSeed|_null := Accounts|1|0|Function|||||683|
+468|[LoopEnd]|LoopEnd|1|0|Loop|||||684|
+469|[End If]|EndIf|1|0|If_Statement||||0x000000|685|
+470|Compare Variables|X = 2|1|0|If_Statement|||||686|
+471|[LoopStart]|LoopStart|0|0|Loop|||||688|
+472|grind|_null := Accounts|1|0|Function|||||690|
+473|[LoopEnd]|LoopEnd|1|0|Loop|||||691|
+474|[End If]|EndIf|1|0|If_Statement||||0x000000|692|
+475|Compare Variables|X = 3|1|0|If_Statement|||||693|
+476|[LoopStart]|LoopStart|0|0|Loop|||||695|
+477|autoRank|_null := Accounts[i]|1|0|Function|||||697|
+478|[LoopEnd]|LoopEnd|1|0|Loop|||||698|
+479|[End If]|EndIf|1|0|If_Statement||||0x000000|699|
+480|Compare Variables|X = 4|1|0|If_Statement|||||700|
+481|[LoopStart]|LoopStart|0|0|Loop|||||702|
+482|EggGrind|_null := Accounts|1|0|Function|||||704|
+483|[LoopEnd]|LoopEnd|1|0|Loop|||||705|
+484|[End If]|EndIf|1|0|If_Statement||||0x000000|706|
+485|Compare Variables|X = 5|1|0|If_Statement|||||707|
+486|[LoopStart]|LoopStart|0|0|Loop|||||709|
+487|AFK|_null := Accounts|1|0|Function|||||711|
+488|[LoopEnd]|LoopEnd|1|0|Loop|||||712|
+489|[End If]|EndIf|1|0|If_Statement||||0x000000|713|
+490|Compare Variables|X = 6|1|0|If_Statement|||||714|
+491|[LoopStart]|LoopStart|0|0|Loop|||||716|
+492|CraftKeys|_null := |1|0|Function|||||718|
+493|[LoopEnd]|LoopEnd|1|0|Loop|||||719|
+494|[End If]|EndIf|1|0|If_Statement||||0x000000|720|
+495|Compare Variables|X = 7|1|0|If_Statement|||||721|
+496|[LoopStart]|LoopStart|0|0|Loop|||||723|
+497|event|_null := Accounts|1|0|Function|||||725|
+498|[LoopEnd]|LoopEnd|1|0|Loop|||||726|
+499|[End If]|EndIf|1|0|If_Statement||||0x000000|727|
+500|Compare Variables|X = 8|1|0|If_Statement|||||728|
+501|[LoopStart]|LoopStart|0|0|Loop|||||730|
+502|OpenKeys|_null := Accounts|1|0|Function|||||732|
+503|[LoopEnd]|LoopEnd|1|0|Loop|||||733|
+504|[End If]|EndIf|1|0|If_Statement||||0x000000|734|
+505|Compare Variables|X = 9|1|0|If_Statement|||||735|
+506|Break||1|0|Break|||||737|
+507|[End If]|EndIf|1|0|If_Statement||||0x000000|738|
+508|[Assign Variable]|List := ["Fuse Pets","Deep pool fishing","Secret Key(WIP)","Back"]|1|0|Variable|Expression||||739|
+509|Menu|X := List|1|0|Function|||||740|
+510|Compare Variables|X = 1|1|0|If_Statement|||||741|
+511|[LoopStart]|LoopStart|0|0|Loop|||||743|
+512|FusePets|_null := Accounts|1|0|Function|||||745|
+513|AFK|_null := Accounts,0|1|0|Function|||||746|
+514|[LoopEnd]|LoopEnd|1|0|Loop|||||747|
+515|[End If]|EndIf|1|0|If_Statement||||0x000000|748|
+516|Compare Variables|X = 2|1|0|If_Statement|||||749|
+517|[LoopStart]|LoopStart|0|0|Loop|||||751|
+518|Fishing|_null := Accounts|1|0|Function|||||753|
+519|AFK|_null := Accounts,0|1|0|Function|||||754|
+520|[LoopEnd]|LoopEnd|1|0|Loop|||||755|
+521|[End If]|EndIf|1|0|If_Statement||||0x000000|756|
+522|Compare Variables|X = 3|1|0|If_Statement|||||757|
+523|[LoopStart]|LoopStart|0|0|Loop|||||759|
+524|KeyOpen|_null := |1|0|Function|||||761|
+525|[LoopEnd]|LoopEnd|1|0|Loop|||||762|
+526|[End If]|EndIf|1|0|If_Statement||||0x000000|763|
+527|Compare Variables|X = 4|1|0|If_Statement|||||764|
+528|Break||1|0|Break|||||766|
+529|[End If]|EndIf|1|0|If_Statement||||0x000000|767|
+530|[End If]|EndIf|1|0|If_Statement||||0x000000|768|
+531|Compare Variables|X = 2|1|0|If_Statement|||||769|
+532|[Assign Variable]|List := ["Get account IDs","Set file","set keybinds","Back"]|1|0|Variable|Expression||||771|
+533|Menu|X := List|1|0|Function|||||772|
+534|Compare Variables|X = 1|1|0|If_Statement|||||773|
+535|MultiAccount|Accounts := |1|0|Function|||||775|
+536|[End If]|EndIf|1|0|If_Statement|||||776|
+537|Compare Variables|X = 2|1|0|If_Statement|||||777|
+538|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event egg(AFK all)","Open Keys","Back","Next"]|1|0|Variable|Expression||||779|
+539|Menu|X := List|1|0|Function|||||780|
+540|Compare Variables|X = 1|1|0|If_Statement|||||781|
+541|[End If]|EndIf|1|0|If_Statement||||0x000000|783|
+542|Compare Variables|X = 2|1|0|If_Statement|||||784|
+543|[End If]|EndIf|1|0|If_Statement||||0x000000|786|
+544|Compare Variables|X = 3|1|0|If_Statement|||||787|
+545|[End If]|EndIf|1|0|If_Statement||||0x000000|789|
+546|Compare Variables|X = 4|1|0|If_Statement|||||790|
+547|[End If]|EndIf|1|0|If_Statement||||0x000000|792|
+548|Compare Variables|X = 5|1|0|If_Statement|||||793|
+549|[End If]|EndIf|1|0|If_Statement||||0x000000|795|
+550|Compare Variables|X = 6|1|0|If_Statement|||||796|
+551|[End If]|EndIf|1|0|If_Statement||||0x000000|798|
+552|Compare Variables|X = 7|1|0|If_Statement|||||799|
+553|[End If]|EndIf|1|0|If_Statement||||0x000000|801|
+554|Compare Variables|X = 8|1|0|If_Statement|||||802|
+555|[End If]|EndIf|1|0|If_Statement||||0x000000|804|
+556|Compare Variables|X = 9|1|0|If_Statement|||||805|
+557|Break||1|0|Break|||||807|
+558|[End If]|EndIf|1|0|If_Statement||||0x000000|808|
+559|[Assign Variable]|List := ["Fuse Pets","deep pool fishing","Back"]|1|0|Variable|Expression||||809|
+560|Menu|X := List|1|0|Function|||||810|
+561|Compare Variables|X = 1|1|0|If_Statement|||||811|
+562|[End If]|EndIf|1|0|If_Statement||||0x000000|813|
+563|Compare Variables|X = 2|1|0|If_Statement|||||814|
+564|[End If]|EndIf|1|0|If_Statement||||0x000000|816|
+565|[End If]|EndIf|1|0|If_Statement|||||817|
+566|Compare Variables|X = 3|1|0|If_Statement|||||818|
+567|Keybinds|_null := |1|0|Function|||||820|
+568|[Assign Variable]|x := 0|1|0|Variable|Expression||||821|
+569|[End If]|EndIf|1|0|If_Statement|||||822|
+570|Compare Variables|X = 4|1|0|If_Statement|||||823|
+571|[Assign Variable]|x := 0|1|0|Variable|Expression||||825|
+572|[End If]|EndIf|1|0|If_Statement|||||826|
+573|[End If]|EndIf|1|0|If_Statement|||||827|
+574|Compare Variables|X = 3|1|0|If_Statement|||||828|
+575|InputBox|m, Macros, macro made by @sosd35 with help by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||830|
+576|[End If]|EndIf|1|0|If_Statement|||||831|
+577|Compare Variables|X = 4|1|0|If_Statement|||||832|
+578|InputBox|m, Macros, coming soon, 5, 320, 200, 111, 111, , 0, type here|1|0|InputBox|||||834|
+579|[End If]|EndIf|1|0|If_Statement|||||835|
+0580|[MsgBox]|% Accounts[1]|1|0|MsgBox|0||||836|
+581|[LoopEnd]|LoopEnd|1|0|Loop|||||838|
+582|StringLen|len, temp|1|0|StringLen|||||840|
+0583|ZoneTP|_null := "spawn"|1|0|Function|||||841|
+0584|Break||1|0|Break|||||843|
+585|[Assign Variable]|temp := Accounts[1]|1|0|Variable|Expression||||844|
+586|StringLen|len, temp|1|0|StringLen|||||846|
+587|Compare Variables|len < 2|1|0|If_Statement|||||847|
+588|MultiAccount|Accounts := |1|0|Function|||||849|
+589|[End If]|EndIf|1|0|If_Statement|||||850|
+590|[LoopStart]|LoopStart|0|0|Loop|||||851|
+591|[Assign Variable]|test := Accounts[1]|1|0|Variable|Expression||||853|
+592|WinActivate||1|333|WinActivate||ahk_pid %test%|||854|
+593|If Window Not Active|AHK_PID %test%|1|0|If_Statement|||||856|
+594|[MsgBox]|Go to settings and correctly set your roblox IDs`nTo do so make sure you have all roblox tabs open to enable them`nType "2" for settings then type "1" to get the account(s)' id`nThen the accounts are set properly`n`nIf this same message pops up after doing the previous tasks`nGo to https://discord.gg/VpqY8kDD9v`nYou can also dm @the_cameraman_sos on discord for further help`n`nCopyright 2024`, DrSoyBoy and sosd35`, All rights reserved.|1|0|MsgBox|0||||858|
+595|[End If]|EndIf|1|0|If_Statement|||||871|
+596|[Assign Variable]|test := Accounts[3]|1|0|Variable|Expression||||872|
+597|[Assign Variable]|file := "C:\Users\101081383\Downloads"|1|0|Variable|Expression||||873|
+598|WinMove|%NAa%, %NAa%, 816, 638|1|0|WinMove||A|||874|
+599|[Assign Variable]|List := ["Macros","Settings","Credits","test"]|1|0|Variable|Expression||||875|
+600|Menu|X := List|1|0|Function|||||876|
+601|Compare Variables|X = 4|1|0|If_Statement|||||877|
+602|[LoopStart]|LoopStart|0|0|Loop|||||879|
+603|[Assign Variable]|i := 1|1|0|Variable|Expression||||881|
+604|autoRank|_null := Accounts[i]|1|0|Function|||||882|
+605|AFK|_null := Accounts,0|1|0|Function|||||883|
+606|[LoopEnd]|LoopEnd|1|0|Loop|||||884|
+607|[End If]|EndIf|1|0|If_Statement||||0x000000|885|
+608|Compare Variables|X = 1|1|0|If_Statement|||||886|
+609|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event (RNG Event)","Open Keys","Back","Next"]|1|0|Variable|Expression||||888|
+610|Menu|X := List|1|0|Function|||||889|
+611|Compare Variables|X = 1|1|0|If_Statement|||||890|
+612|[LoopStart]|LoopStart|0|0|Loop|||||892|
+613|DiamondSeed|_null := Accounts|1|0|Function|||||894|
+614|[LoopEnd]|LoopEnd|1|0|Loop|||||895|
+615|[End If]|EndIf|1|0|If_Statement||||0x000000|896|
+616|Compare Variables|X = 2|1|0|If_Statement|||||897|
+617|[LoopStart]|LoopStart|0|0|Loop|||||899|
+618|grind|_null := Accounts|1|0|Function|||||901|
+619|[LoopEnd]|LoopEnd|1|0|Loop|||||902|
+620|[End If]|EndIf|1|0|If_Statement||||0x000000|903|
+621|Compare Variables|X = 3|1|0|If_Statement|||||904|
+622|[LoopStart]|LoopStart|0|0|Loop|||||906|
+623|autoRank|_null := Accounts[i]|1|0|Function|||||908|
+624|[LoopEnd]|LoopEnd|1|0|Loop|||||909|
+625|[End If]|EndIf|1|0|If_Statement||||0x000000|910|
+626|Compare Variables|X = 4|1|0|If_Statement|||||911|
+627|[LoopStart]|LoopStart|0|0|Loop|||||913|
+628|EggGrind|_null := Accounts|1|0|Function|||||915|
+629|[LoopEnd]|LoopEnd|1|0|Loop|||||916|
+630|[End If]|EndIf|1|0|If_Statement||||0x000000|917|
+631|Compare Variables|X = 5|1|0|If_Statement|||||918|
+632|[LoopStart]|LoopStart|0|0|Loop|||||920|
+633|AFK|_null := Accounts|1|0|Function|||||922|
+634|[LoopEnd]|LoopEnd|1|0|Loop|||||923|
+635|[End If]|EndIf|1|0|If_Statement||||0x000000|924|
+636|Compare Variables|X = 6|1|0|If_Statement|||||925|
+637|[LoopStart]|LoopStart|0|0|Loop|||||927|
+638|CraftKeys|_null := |1|0|Function|||||929|
+639|[LoopEnd]|LoopEnd|1|0|Loop|||||930|
+640|[End If]|EndIf|1|0|If_Statement||||0x000000|931|
+641|Compare Variables|X = 7|1|0|If_Statement|||||932|
+642|[LoopStart]|LoopStart|0|0|Loop|||||934|
+643|event|_null := Accounts|1|0|Function|||||936|
+644|[LoopEnd]|LoopEnd|1|0|Loop|||||937|
+645|[End If]|EndIf|1|0|If_Statement||||0x000000|938|
+646|Compare Variables|X = 8|1|0|If_Statement|||||939|
+647|[LoopStart]|LoopStart|0|0|Loop|||||941|
+648|OpenKeys|_null := Accounts|1|0|Function|||||943|
+649|[LoopEnd]|LoopEnd|1|0|Loop|||||944|
+650|[End If]|EndIf|1|0|If_Statement||||0x000000|945|
+651|Compare Variables|X = 9|1|0|If_Statement|||||946|
+652|Break||1|0|Break|||||948|
+653|[End If]|EndIf|1|0|If_Statement||||0x000000|949|
+654|[Assign Variable]|List := ["Fuse Pets","Deep pool fishing","Secret Key(WIP)","Back"]|1|0|Variable|Expression||||950|
+655|Menu|X := List|1|0|Function|||||951|
+656|Compare Variables|X = 1|1|0|If_Statement|||||952|
+657|[LoopStart]|LoopStart|0|0|Loop|||||954|
+658|FusePets|_null := Accounts|1|0|Function|||||956|
+659|AFK|_null := Accounts,0|1|0|Function|||||957|
+660|[LoopEnd]|LoopEnd|1|0|Loop|||||958|
+661|[End If]|EndIf|1|0|If_Statement||||0x000000|959|
+662|Compare Variables|X = 2|1|0|If_Statement|||||960|
+663|[LoopStart]|LoopStart|0|0|Loop|||||962|
+664|Fishing|_null := Accounts|1|0|Function|||||964|
+665|AFK|_null := Accounts,0|1|0|Function|||||965|
+666|[LoopEnd]|LoopEnd|1|0|Loop|||||966|
+667|[End If]|EndIf|1|0|If_Statement||||0x000000|967|
+668|Compare Variables|X = 3|1|0|If_Statement|||||968|
+669|[LoopStart]|LoopStart|0|0|Loop|||||970|
+670|KeyOpen|_null := |1|0|Function|||||972|
+671|[LoopEnd]|LoopEnd|1|0|Loop|||||973|
+672|[End If]|EndIf|1|0|If_Statement||||0x000000|974|
+673|Compare Variables|X = 4|1|0|If_Statement|||||975|
+674|Break||1|0|Break|||||977|
+675|[End If]|EndIf|1|0|If_Statement||||0x000000|978|
+676|[End If]|EndIf|1|0|If_Statement||||0x000000|979|
+677|Compare Variables|X = 2|1|0|If_Statement|||||980|
+678|[Assign Variable]|List := ["Get account IDs","Set file","set keybinds","Back"]|1|0|Variable|Expression||||982|
+679|Menu|X := List|1|0|Function|||||983|
+680|Compare Variables|X = 1|1|0|If_Statement|||||984|
+681|MultiAccount|Accounts := |1|0|Function|||||986|
+682|[End If]|EndIf|1|0|If_Statement|||||987|
+683|Compare Variables|X = 2|1|0|If_Statement|||||988|
+684|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event egg(AFK all)","Open Keys","Back","Next"]|1|0|Variable|Expression||||990|
+685|Menu|X := List|1|0|Function|||||991|
+686|Compare Variables|X = 1|1|0|If_Statement|||||992|
+687|[End If]|EndIf|1|0|If_Statement||||0x000000|994|
+688|Compare Variables|X = 2|1|0|If_Statement|||||995|
+689|[End If]|EndIf|1|0|If_Statement||||0x000000|997|
+690|Compare Variables|X = 3|1|0|If_Statement|||||998|
+691|[End If]|EndIf|1|0|If_Statement||||0x000000|1000|
+692|Compare Variables|X = 4|1|0|If_Statement|||||1001|
+693|[End If]|EndIf|1|0|If_Statement||||0x000000|1003|
+694|Compare Variables|X = 5|1|0|If_Statement|||||1004|
+695|[End If]|EndIf|1|0|If_Statement||||0x000000|1006|
+696|Compare Variables|X = 6|1|0|If_Statement|||||1007|
+697|[End If]|EndIf|1|0|If_Statement||||0x000000|1009|
+698|Compare Variables|X = 7|1|0|If_Statement|||||1010|
+699|[End If]|EndIf|1|0|If_Statement||||0x000000|1012|
+700|Compare Variables|X = 8|1|0|If_Statement|||||1013|
+701|[End If]|EndIf|1|0|If_Statement||||0x000000|1015|
+702|Compare Variables|X = 9|1|0|If_Statement|||||1016|
+703|Break||1|0|Break|||||1018|
+704|[End If]|EndIf|1|0|If_Statement||||0x000000|1019|
+705|[Assign Variable]|List := ["Fuse Pets","deep pool fishing","Back"]|1|0|Variable|Expression||||1020|
+706|Menu|X := List|1|0|Function|||||1021|
+707|Compare Variables|X = 1|1|0|If_Statement|||||1022|
+708|[End If]|EndIf|1|0|If_Statement||||0x000000|1024|
+709|Compare Variables|X = 2|1|0|If_Statement|||||1025|
+710|[End If]|EndIf|1|0|If_Statement||||0x000000|1027|
+711|[End If]|EndIf|1|0|If_Statement|||||1028|
+712|Compare Variables|X = 3|1|0|If_Statement|||||1029|
+713|Keybinds|_null := |1|0|Function|||||1031|
+714|[Assign Variable]|x := 0|1|0|Variable|Expression||||1032|
+715|[End If]|EndIf|1|0|If_Statement|||||1033|
+716|Compare Variables|X = 4|1|0|If_Statement|||||1034|
+717|[Assign Variable]|x := 0|1|0|Variable|Expression||||1036|
+718|[End If]|EndIf|1|0|If_Statement|||||1037|
+719|[End If]|EndIf|1|0|If_Statement|||||1038|
+720|Compare Variables|X = 3|1|0|If_Statement|||||1039|
+721|InputBox|m, Macros, macro made by @sosd35 with help by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||1041|
+722|[End If]|EndIf|1|0|If_Statement|||||1042|
+723|Compare Variables|X = 4|1|0|If_Statement|||||1043|
+724|InputBox|m, Macros, coming soon, 5, 320, 200, 111, 111, , 0, type here|1|0|InputBox|||||1045|
+725|[End If]|EndIf|1|0|If_Statement|||||1046|
+0726|[MsgBox]|% Accounts[1]|1|0|MsgBox|0||||1047|
+727|[LoopEnd]|LoopEnd|1|0|Loop|||||1049|
+728|Compare Variables|len < 2|1|0|If_Statement|||||1051|
+0729|ZoneTP|_null := "spawn"|1|0|Function|||||1053|
+0730|Break||1|0|Break|||||1055|
+731|[Assign Variable]|temp := Accounts[1]|1|0|Variable|Expression||||1056|
+732|StringLen|len, temp|1|0|StringLen|||||1058|
+733|Compare Variables|len < 2|1|0|If_Statement|||||1059|
+734|MultiAccount|Accounts := |1|0|Function|||||1061|
+735|[End If]|EndIf|1|0|If_Statement|||||1062|
+736|[LoopStart]|LoopStart|0|0|Loop|||||1063|
+737|[Assign Variable]|test := Accounts[1]|1|0|Variable|Expression||||1065|
+738|WinActivate||1|333|WinActivate||ahk_pid %test%|||1066|
+739|If Window Not Active|AHK_PID %test%|1|0|If_Statement|||||1068|
+740|[MsgBox]|Go to settings and correctly set your roblox IDs`nTo do so make sure you have all roblox tabs open to enable them`nType "2" for settings then type "1" to get the account(s)' id`nThen the accounts are set properly`n`nIf this same message pops up after doing the previous tasks`nGo to https://discord.gg/VpqY8kDD9v`nYou can also dm @the_cameraman_sos on discord for further help`n`nCopyright 2024`, DrSoyBoy and sosd35`, All rights reserved.|1|0|MsgBox|0||||1070|
+741|[End If]|EndIf|1|0|If_Statement|||||1083|
+742|[Assign Variable]|test := Accounts[3]|1|0|Variable|Expression||||1084|
+743|[Assign Variable]|file := "C:\Users\101081383\Downloads"|1|0|Variable|Expression||||1085|
+744|WinMove|%NAa%, %NAa%, 816, 638|1|0|WinMove||A|||1086|
+745|[Assign Variable]|List := ["Macros","Settings","Credits","test"]|1|0|Variable|Expression||||1087|
+746|Menu|X := List|1|0|Function|||||1088|
+747|Compare Variables|X = 4|1|0|If_Statement|||||1089|
+748|[LoopStart]|LoopStart|0|0|Loop|||||1091|
+749|[Assign Variable]|i := 1|1|0|Variable|Expression||||1093|
+750|autoRank|_null := Accounts[i]|1|0|Function|||||1094|
+751|AFK|_null := Accounts,0|1|0|Function|||||1095|
+752|[LoopEnd]|LoopEnd|1|0|Loop|||||1096|
+753|[End If]|EndIf|1|0|If_Statement||||0x000000|1097|
+754|Compare Variables|X = 1|1|0|If_Statement|||||1098|
+755|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event (RNG Event)","Open Keys","Back","Next"]|1|0|Variable|Expression||||1100|
+756|Menu|X := List|1|0|Function|||||1101|
+757|Compare Variables|X = 1|1|0|If_Statement|||||1102|
+758|[LoopStart]|LoopStart|0|0|Loop|||||1104|
+759|DiamondSeed|_null := Accounts|1|0|Function|||||1106|
+760|[LoopEnd]|LoopEnd|1|0|Loop|||||1107|
+761|[End If]|EndIf|1|0|If_Statement||||0x000000|1108|
+762|Compare Variables|X = 2|1|0|If_Statement|||||1109|
+763|[LoopStart]|LoopStart|0|0|Loop|||||1111|
+764|grind|_null := Accounts|1|0|Function|||||1113|
+765|[LoopEnd]|LoopEnd|1|0|Loop|||||1114|
+766|[End If]|EndIf|1|0|If_Statement||||0x000000|1115|
+767|Compare Variables|X = 3|1|0|If_Statement|||||1116|
+768|[LoopStart]|LoopStart|0|0|Loop|||||1118|
+769|autoRank|_null := Accounts[i]|1|0|Function|||||1120|
+770|[LoopEnd]|LoopEnd|1|0|Loop|||||1121|
+771|[End If]|EndIf|1|0|If_Statement||||0x000000|1122|
+772|Compare Variables|X = 4|1|0|If_Statement|||||1123|
+773|[LoopStart]|LoopStart|0|0|Loop|||||1125|
+774|EggGrind|_null := Accounts|1|0|Function|||||1127|
+775|[LoopEnd]|LoopEnd|1|0|Loop|||||1128|
+776|[End If]|EndIf|1|0|If_Statement||||0x000000|1129|
+777|Compare Variables|X = 5|1|0|If_Statement|||||1130|
+778|[LoopStart]|LoopStart|0|0|Loop|||||1132|
+779|AFK|_null := Accounts|1|0|Function|||||1134|
+780|[LoopEnd]|LoopEnd|1|0|Loop|||||1135|
+781|[End If]|EndIf|1|0|If_Statement||||0x000000|1136|
+782|Compare Variables|X = 6|1|0|If_Statement|||||1137|
+783|[LoopStart]|LoopStart|0|0|Loop|||||1139|
+784|CraftKeys|_null := |1|0|Function|||||1141|
+785|[LoopEnd]|LoopEnd|1|0|Loop|||||1142|
+786|[End If]|EndIf|1|0|If_Statement||||0x000000|1143|
+787|Compare Variables|X = 7|1|0|If_Statement|||||1144|
+788|[LoopStart]|LoopStart|0|0|Loop|||||1146|
+789|event|_null := Accounts|1|0|Function|||||1148|
+790|[LoopEnd]|LoopEnd|1|0|Loop|||||1149|
+791|[End If]|EndIf|1|0|If_Statement||||0x000000|1150|
+792|Compare Variables|X = 8|1|0|If_Statement|||||1151|
+793|[LoopStart]|LoopStart|0|0|Loop|||||1153|
+794|OpenKeys|_null := Accounts|1|0|Function|||||1155|
+795|[LoopEnd]|LoopEnd|1|0|Loop|||||1156|
+796|[End If]|EndIf|1|0|If_Statement||||0x000000|1157|
+797|Compare Variables|X = 9|1|0|If_Statement|||||1158|
+798|Break||1|0|Break|||||1160|
+799|[End If]|EndIf|1|0|If_Statement||||0x000000|1161|
+800|[Assign Variable]|List := ["Fuse Pets","Deep pool fishing","Secret Key(WIP)","Back"]|1|0|Variable|Expression||||1162|
+801|Menu|X := List|1|0|Function|||||1163|
+802|Compare Variables|X = 1|1|0|If_Statement|||||1164|
+803|[LoopStart]|LoopStart|0|0|Loop|||||1166|
+804|FusePets|_null := Accounts|1|0|Function|||||1168|
+805|AFK|_null := Accounts,0|1|0|Function|||||1169|
+806|[LoopEnd]|LoopEnd|1|0|Loop|||||1170|
+807|[End If]|EndIf|1|0|If_Statement||||0x000000|1171|
+808|Compare Variables|X = 2|1|0|If_Statement|||||1172|
+809|[LoopStart]|LoopStart|0|0|Loop|||||1174|
+810|Fishing|_null := Accounts|1|0|Function|||||1176|
+811|AFK|_null := Accounts,0|1|0|Function|||||1177|
+812|[LoopEnd]|LoopEnd|1|0|Loop|||||1178|
+813|[End If]|EndIf|1|0|If_Statement||||0x000000|1179|
+814|Compare Variables|X = 3|1|0|If_Statement|||||1180|
+815|[LoopStart]|LoopStart|0|0|Loop|||||1182|
+816|KeyOpen|_null := |1|0|Function|||||1184|
+817|[LoopEnd]|LoopEnd|1|0|Loop|||||1185|
+818|[End If]|EndIf|1|0|If_Statement||||0x000000|1186|
+819|Compare Variables|X = 4|1|0|If_Statement|||||1187|
+820|Break||1|0|Break|||||1189|
+821|[End If]|EndIf|1|0|If_Statement||||0x000000|1190|
+822|[End If]|EndIf|1|0|If_Statement||||0x000000|1191|
+823|Compare Variables|X = 2|1|0|If_Statement|||||1192|
+824|[Assign Variable]|List := ["Get account IDs","Set file","set keybinds","Back"]|1|0|Variable|Expression||||1194|
+825|Menu|X := List|1|0|Function|||||1195|
+826|Compare Variables|X = 1|1|0|If_Statement|||||1196|
+827|MultiAccount|Accounts := |1|0|Function|||||1198|
+828|[End If]|EndIf|1|0|If_Statement|||||1199|
+829|Compare Variables|X = 2|1|0|If_Statement|||||1200|
+830|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event egg(AFK all)","Open Keys","Back","Next"]|1|0|Variable|Expression||||1202|
+831|Menu|X := List|1|0|Function|||||1203|
+832|Compare Variables|X = 1|1|0|If_Statement|||||1204|
+833|[End If]|EndIf|1|0|If_Statement||||0x000000|1206|
+834|Compare Variables|X = 2|1|0|If_Statement|||||1207|
+835|[End If]|EndIf|1|0|If_Statement||||0x000000|1209|
+836|Compare Variables|X = 3|1|0|If_Statement|||||1210|
+837|[End If]|EndIf|1|0|If_Statement||||0x000000|1212|
+838|Compare Variables|X = 4|1|0|If_Statement|||||1213|
+839|[End If]|EndIf|1|0|If_Statement||||0x000000|1215|
+840|Compare Variables|X = 5|1|0|If_Statement|||||1216|
+841|[End If]|EndIf|1|0|If_Statement||||0x000000|1218|
+842|Compare Variables|X = 6|1|0|If_Statement|||||1219|
+843|[End If]|EndIf|1|0|If_Statement||||0x000000|1221|
+844|Compare Variables|X = 7|1|0|If_Statement|||||1222|
+845|[End If]|EndIf|1|0|If_Statement||||0x000000|1224|
+846|Compare Variables|X = 8|1|0|If_Statement|||||1225|
+847|[End If]|EndIf|1|0|If_Statement||||0x000000|1227|
+848|Compare Variables|X = 9|1|0|If_Statement|||||1228|
+849|Break||1|0|Break|||||1230|
+850|[End If]|EndIf|1|0|If_Statement||||0x000000|1231|
+851|[Assign Variable]|List := ["Fuse Pets","deep pool fishing","Back"]|1|0|Variable|Expression||||1232|
+852|Menu|X := List|1|0|Function|||||1233|
+853|Compare Variables|X = 1|1|0|If_Statement|||||1234|
+854|[End If]|EndIf|1|0|If_Statement||||0x000000|1236|
+855|Compare Variables|X = 2|1|0|If_Statement|||||1237|
+856|[End If]|EndIf|1|0|If_Statement||||0x000000|1239|
+857|[End If]|EndIf|1|0|If_Statement|||||1240|
+858|Compare Variables|X = 3|1|0|If_Statement|||||1241|
+859|Keybinds|_null := |1|0|Function|||||1243|
+860|[Assign Variable]|x := 0|1|0|Variable|Expression||||1244|
+861|[End If]|EndIf|1|0|If_Statement|||||1245|
+862|Compare Variables|X = 4|1|0|If_Statement|||||1246|
+863|[Assign Variable]|x := 0|1|0|Variable|Expression||||1248|
+864|[End If]|EndIf|1|0|If_Statement|||||1249|
+865|[End If]|EndIf|1|0|If_Statement|||||1250|
+866|Compare Variables|X = 3|1|0|If_Statement|||||1251|
+867|InputBox|m, Macros, macro made by @sosd35 with help by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||1253|
+868|[End If]|EndIf|1|0|If_Statement|||||1254|
+869|Compare Variables|X = 4|1|0|If_Statement|||||1255|
+870|InputBox|m, Macros, coming soon, 5, 320, 200, 111, 111, , 0, type here|1|0|InputBox|||||1257|
+871|[End If]|EndIf|1|0|If_Statement|||||1258|
+0872|[MsgBox]|% Accounts[1]|1|0|MsgBox|0||||1259|
+873|[LoopEnd]|LoopEnd|1|0|Loop|||||1261|
+874|MultiAccount|Accounts := |1|0|Function|||||1263|
+0875|ZoneTP|_null := "spawn"|1|0|Function|||||1264|
+0876|Break||1|0|Break|||||1266|
+877|[Assign Variable]|temp := Accounts[1]|1|0|Variable|Expression||||1267|
+878|StringLen|len, temp|1|0|StringLen|||||1269|
+879|Compare Variables|len < 2|1|0|If_Statement|||||1270|
+880|MultiAccount|Accounts := |1|0|Function|||||1272|
+881|[End If]|EndIf|1|0|If_Statement|||||1273|
+882|[LoopStart]|LoopStart|0|0|Loop|||||1274|
+883|[Assign Variable]|test := Accounts[1]|1|0|Variable|Expression||||1276|
+884|WinActivate||1|333|WinActivate||ahk_pid %test%|||1277|
+885|If Window Not Active|AHK_PID %test%|1|0|If_Statement|||||1279|
+886|[MsgBox]|Go to settings and correctly set your roblox IDs`nTo do so make sure you have all roblox tabs open to enable them`nType "2" for settings then type "1" to get the account(s)' id`nThen the accounts are set properly`n`nIf this same message pops up after doing the previous tasks`nGo to https://discord.gg/VpqY8kDD9v`nYou can also dm @the_cameraman_sos on discord for further help`n`nCopyright 2024`, DrSoyBoy and sosd35`, All rights reserved.|1|0|MsgBox|0||||1281|
+887|[End If]|EndIf|1|0|If_Statement|||||1294|
+888|[Assign Variable]|test := Accounts[3]|1|0|Variable|Expression||||1295|
+889|[Assign Variable]|file := "C:\Users\101081383\Downloads"|1|0|Variable|Expression||||1296|
+890|WinMove|%NAa%, %NAa%, 816, 638|1|0|WinMove||A|||1297|
+891|[Assign Variable]|List := ["Macros","Settings","Credits","test"]|1|0|Variable|Expression||||1298|
+892|Menu|X := List|1|0|Function|||||1299|
+893|Compare Variables|X = 4|1|0|If_Statement|||||1300|
+894|[LoopStart]|LoopStart|0|0|Loop|||||1302|
+895|[Assign Variable]|i := 1|1|0|Variable|Expression||||1304|
+896|autoRank|_null := Accounts[i]|1|0|Function|||||1305|
+897|AFK|_null := Accounts,0|1|0|Function|||||1306|
+898|[LoopEnd]|LoopEnd|1|0|Loop|||||1307|
+899|[End If]|EndIf|1|0|If_Statement||||0x000000|1308|
+900|Compare Variables|X = 1|1|0|If_Statement|||||1309|
+901|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event (RNG Event)","Open Keys","Back","Next"]|1|0|Variable|Expression||||1311|
+902|Menu|X := List|1|0|Function|||||1312|
+903|Compare Variables|X = 1|1|0|If_Statement|||||1313|
+904|[LoopStart]|LoopStart|0|0|Loop|||||1315|
+905|DiamondSeed|_null := Accounts|1|0|Function|||||1317|
+906|[LoopEnd]|LoopEnd|1|0|Loop|||||1318|
+907|[End If]|EndIf|1|0|If_Statement||||0x000000|1319|
+908|Compare Variables|X = 2|1|0|If_Statement|||||1320|
+909|[LoopStart]|LoopStart|0|0|Loop|||||1322|
+910|grind|_null := Accounts|1|0|Function|||||1324|
+911|[LoopEnd]|LoopEnd|1|0|Loop|||||1325|
+912|[End If]|EndIf|1|0|If_Statement||||0x000000|1326|
+913|Compare Variables|X = 3|1|0|If_Statement|||||1327|
+914|[LoopStart]|LoopStart|0|0|Loop|||||1329|
+915|autoRank|_null := Accounts[i]|1|0|Function|||||1331|
+916|[LoopEnd]|LoopEnd|1|0|Loop|||||1332|
+917|[End If]|EndIf|1|0|If_Statement||||0x000000|1333|
+918|Compare Variables|X = 4|1|0|If_Statement|||||1334|
+919|[LoopStart]|LoopStart|0|0|Loop|||||1336|
+920|EggGrind|_null := Accounts|1|0|Function|||||1338|
+921|[LoopEnd]|LoopEnd|1|0|Loop|||||1339|
+922|[End If]|EndIf|1|0|If_Statement||||0x000000|1340|
+923|Compare Variables|X = 5|1|0|If_Statement|||||1341|
+924|[LoopStart]|LoopStart|0|0|Loop|||||1343|
+925|AFK|_null := Accounts|1|0|Function|||||1345|
+926|[LoopEnd]|LoopEnd|1|0|Loop|||||1346|
+927|[End If]|EndIf|1|0|If_Statement||||0x000000|1347|
+928|Compare Variables|X = 6|1|0|If_Statement|||||1348|
+929|[LoopStart]|LoopStart|0|0|Loop|||||1350|
+930|CraftKeys|_null := |1|0|Function|||||1352|
+931|[LoopEnd]|LoopEnd|1|0|Loop|||||1353|
+932|[End If]|EndIf|1|0|If_Statement||||0x000000|1354|
+933|Compare Variables|X = 7|1|0|If_Statement|||||1355|
+934|[LoopStart]|LoopStart|0|0|Loop|||||1357|
+935|event|_null := Accounts|1|0|Function|||||1359|
+936|[LoopEnd]|LoopEnd|1|0|Loop|||||1360|
+937|[End If]|EndIf|1|0|If_Statement||||0x000000|1361|
+938|Compare Variables|X = 8|1|0|If_Statement|||||1362|
+939|[LoopStart]|LoopStart|0|0|Loop|||||1364|
+940|OpenKeys|_null := Accounts|1|0|Function|||||1366|
+941|[LoopEnd]|LoopEnd|1|0|Loop|||||1367|
+942|[End If]|EndIf|1|0|If_Statement||||0x000000|1368|
+943|Compare Variables|X = 9|1|0|If_Statement|||||1369|
+944|Break||1|0|Break|||||1371|
+945|[End If]|EndIf|1|0|If_Statement||||0x000000|1372|
+946|[Assign Variable]|List := ["Fuse Pets","Deep pool fishing","Secret Key(WIP)","Back"]|1|0|Variable|Expression||||1373|
+947|Menu|X := List|1|0|Function|||||1374|
+948|Compare Variables|X = 1|1|0|If_Statement|||||1375|
+949|[LoopStart]|LoopStart|0|0|Loop|||||1377|
+950|FusePets|_null := Accounts|1|0|Function|||||1379|
+951|AFK|_null := Accounts,0|1|0|Function|||||1380|
+952|[LoopEnd]|LoopEnd|1|0|Loop|||||1381|
+953|[End If]|EndIf|1|0|If_Statement||||0x000000|1382|
+954|Compare Variables|X = 2|1|0|If_Statement|||||1383|
+955|[LoopStart]|LoopStart|0|0|Loop|||||1385|
+956|Fishing|_null := Accounts|1|0|Function|||||1387|
+957|AFK|_null := Accounts,0|1|0|Function|||||1388|
+958|[LoopEnd]|LoopEnd|1|0|Loop|||||1389|
+959|[End If]|EndIf|1|0|If_Statement||||0x000000|1390|
+960|Compare Variables|X = 3|1|0|If_Statement|||||1391|
+961|[LoopStart]|LoopStart|0|0|Loop|||||1393|
+962|KeyOpen|_null := |1|0|Function|||||1395|
+963|[LoopEnd]|LoopEnd|1|0|Loop|||||1396|
+964|[End If]|EndIf|1|0|If_Statement||||0x000000|1397|
+965|Compare Variables|X = 4|1|0|If_Statement|||||1398|
+966|Break||1|0|Break|||||1400|
+967|[End If]|EndIf|1|0|If_Statement||||0x000000|1401|
+968|[End If]|EndIf|1|0|If_Statement||||0x000000|1402|
+969|Compare Variables|X = 2|1|0|If_Statement|||||1403|
+970|[Assign Variable]|List := ["Get account IDs","Set file","set keybinds","Back"]|1|0|Variable|Expression||||1405|
+971|Menu|X := List|1|0|Function|||||1406|
+972|Compare Variables|X = 1|1|0|If_Statement|||||1407|
+973|MultiAccount|Accounts := |1|0|Function|||||1409|
+974|[End If]|EndIf|1|0|If_Statement|||||1410|
+975|Compare Variables|X = 2|1|0|If_Statement|||||1411|
+976|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event egg(AFK all)","Open Keys","Back","Next"]|1|0|Variable|Expression||||1413|
+977|Menu|X := List|1|0|Function|||||1414|
+978|Compare Variables|X = 1|1|0|If_Statement|||||1415|
+979|[End If]|EndIf|1|0|If_Statement||||0x000000|1417|
+980|Compare Variables|X = 2|1|0|If_Statement|||||1418|
+981|[End If]|EndIf|1|0|If_Statement||||0x000000|1420|
+982|Compare Variables|X = 3|1|0|If_Statement|||||1421|
+983|[End If]|EndIf|1|0|If_Statement||||0x000000|1423|
+984|Compare Variables|X = 4|1|0|If_Statement|||||1424|
+985|[End If]|EndIf|1|0|If_Statement||||0x000000|1426|
+986|Compare Variables|X = 5|1|0|If_Statement|||||1427|
+987|[End If]|EndIf|1|0|If_Statement||||0x000000|1429|
+988|Compare Variables|X = 6|1|0|If_Statement|||||1430|
+989|[End If]|EndIf|1|0|If_Statement||||0x000000|1432|
+990|Compare Variables|X = 7|1|0|If_Statement|||||1433|
+991|[End If]|EndIf|1|0|If_Statement||||0x000000|1435|
+992|Compare Variables|X = 8|1|0|If_Statement|||||1436|
+993|[End If]|EndIf|1|0|If_Statement||||0x000000|1438|
+994|Compare Variables|X = 9|1|0|If_Statement|||||1439|
+995|Break||1|0|Break|||||1441|
+996|[End If]|EndIf|1|0|If_Statement||||0x000000|1442|
+997|[Assign Variable]|List := ["Fuse Pets","deep pool fishing","Back"]|1|0|Variable|Expression||||1443|
+998|Menu|X := List|1|0|Function|||||1444|
+999|Compare Variables|X = 1|1|0|If_Statement|||||1445|
+1000|[End If]|EndIf|1|0|If_Statement||||0x000000|1447|
+1001|Compare Variables|X = 2|1|0|If_Statement|||||1448|
+1002|[End If]|EndIf|1|0|If_Statement||||0x000000|1450|
+1003|[End If]|EndIf|1|0|If_Statement|||||1451|
+1004|Compare Variables|X = 3|1|0|If_Statement|||||1452|
+1005|Keybinds|_null := |1|0|Function|||||1454|
+1006|[Assign Variable]|x := 0|1|0|Variable|Expression||||1455|
+1007|[End If]|EndIf|1|0|If_Statement|||||1456|
+1008|Compare Variables|X = 4|1|0|If_Statement|||||1457|
+1009|[Assign Variable]|x := 0|1|0|Variable|Expression||||1459|
+1010|[End If]|EndIf|1|0|If_Statement|||||1460|
+1011|[End If]|EndIf|1|0|If_Statement|||||1461|
+1012|Compare Variables|X = 3|1|0|If_Statement|||||1462|
+1013|InputBox|m, Macros, macro made by @sosd35 with help by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||1464|
+1014|[End If]|EndIf|1|0|If_Statement|||||1465|
+1015|Compare Variables|X = 4|1|0|If_Statement|||||1466|
+1016|InputBox|m, Macros, coming soon, 5, 320, 200, 111, 111, , 0, type here|1|0|InputBox|||||1468|
+1017|[End If]|EndIf|1|0|If_Statement|||||1469|
+01018|[MsgBox]|% Accounts[1]|1|0|MsgBox|0||||1470|
+1019|[LoopEnd]|LoopEnd|1|0|Loop|||||1472|
+1020|[End If]|EndIf|1|0|If_Statement|||||1474|
+01021|ZoneTP|_null := "spawn"|1|0|Function|||||1475|
+01022|Break||1|0|Break|||||1477|
+1023|[Assign Variable]|temp := Accounts[1]|1|0|Variable|Expression||||1478|
+1024|StringLen|len, temp|1|0|StringLen|||||1480|
+1025|Compare Variables|len < 2|1|0|If_Statement|||||1481|
+1026|MultiAccount|Accounts := |1|0|Function|||||1483|
+1027|[End If]|EndIf|1|0|If_Statement|||||1484|
+1028|[LoopStart]|LoopStart|0|0|Loop|||||1485|
+1029|[Assign Variable]|test := Accounts[1]|1|0|Variable|Expression||||1487|
+1030|WinActivate||1|333|WinActivate||ahk_pid %test%|||1488|
+1031|If Window Not Active|AHK_PID %test%|1|0|If_Statement|||||1490|
+1032|[MsgBox]|Go to settings and correctly set your roblox IDs`nTo do so make sure you have all roblox tabs open to enable them`nType "2" for settings then type "1" to get the account(s)' id`nThen the accounts are set properly`n`nIf this same message pops up after doing the previous tasks`nGo to https://discord.gg/VpqY8kDD9v`nYou can also dm @the_cameraman_sos on discord for further help`n`nCopyright 2024`, DrSoyBoy and sosd35`, All rights reserved.|1|0|MsgBox|0||||1492|
+1033|[End If]|EndIf|1|0|If_Statement|||||1505|
+1034|[Assign Variable]|test := Accounts[3]|1|0|Variable|Expression||||1506|
+1035|[Assign Variable]|file := "C:\Users\101081383\Downloads"|1|0|Variable|Expression||||1507|
+1036|WinMove|%NAa%, %NAa%, 816, 638|1|0|WinMove||A|||1508|
+1037|[Assign Variable]|List := ["Macros","Settings","Credits","test"]|1|0|Variable|Expression||||1509|
+1038|Menu|X := List|1|0|Function|||||1510|
+1039|Compare Variables|X = 4|1|0|If_Statement|||||1511|
+1040|[LoopStart]|LoopStart|0|0|Loop|||||1513|
+1041|[Assign Variable]|i := 1|1|0|Variable|Expression||||1515|
+1042|autoRank|_null := Accounts[i]|1|0|Function|||||1516|
+1043|AFK|_null := Accounts,0|1|0|Function|||||1517|
+1044|[LoopEnd]|LoopEnd|1|0|Loop|||||1518|
+1045|[End If]|EndIf|1|0|If_Statement||||0x000000|1519|
+1046|Compare Variables|X = 1|1|0|If_Statement|||||1520|
+1047|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event (RNG Event)","Open Keys","Back","Next"]|1|0|Variable|Expression||||1522|
+1048|Menu|X := List|1|0|Function|||||1523|
+1049|Compare Variables|X = 1|1|0|If_Statement|||||1524|
+1050|[LoopStart]|LoopStart|0|0|Loop|||||1526|
+1051|DiamondSeed|_null := Accounts|1|0|Function|||||1528|
+1052|[LoopEnd]|LoopEnd|1|0|Loop|||||1529|
+1053|[End If]|EndIf|1|0|If_Statement||||0x000000|1530|
+1054|Compare Variables|X = 2|1|0|If_Statement|||||1531|
+1055|[LoopStart]|LoopStart|0|0|Loop|||||1533|
+1056|grind|_null := Accounts|1|0|Function|||||1535|
+1057|[LoopEnd]|LoopEnd|1|0|Loop|||||1536|
+1058|[End If]|EndIf|1|0|If_Statement||||0x000000|1537|
+1059|Compare Variables|X = 3|1|0|If_Statement|||||1538|
+1060|[LoopStart]|LoopStart|0|0|Loop|||||1540|
+1061|autoRank|_null := Accounts[i]|1|0|Function|||||1542|
+1062|[LoopEnd]|LoopEnd|1|0|Loop|||||1543|
+1063|[End If]|EndIf|1|0|If_Statement||||0x000000|1544|
+1064|Compare Variables|X = 4|1|0|If_Statement|||||1545|
+1065|[LoopStart]|LoopStart|0|0|Loop|||||1547|
+1066|EggGrind|_null := Accounts|1|0|Function|||||1549|
+1067|[LoopEnd]|LoopEnd|1|0|Loop|||||1550|
+1068|[End If]|EndIf|1|0|If_Statement||||0x000000|1551|
+1069|Compare Variables|X = 5|1|0|If_Statement|||||1552|
+1070|[LoopStart]|LoopStart|0|0|Loop|||||1554|
+1071|AFK|_null := Accounts|1|0|Function|||||1556|
+1072|[LoopEnd]|LoopEnd|1|0|Loop|||||1557|
+1073|[End If]|EndIf|1|0|If_Statement||||0x000000|1558|
+1074|Compare Variables|X = 6|1|0|If_Statement|||||1559|
+1075|[LoopStart]|LoopStart|0|0|Loop|||||1561|
+1076|CraftKeys|_null := |1|0|Function|||||1563|
+1077|[LoopEnd]|LoopEnd|1|0|Loop|||||1564|
+1078|[End If]|EndIf|1|0|If_Statement||||0x000000|1565|
+1079|Compare Variables|X = 7|1|0|If_Statement|||||1566|
+1080|[LoopStart]|LoopStart|0|0|Loop|||||1568|
+1081|event|_null := Accounts|1|0|Function|||||1570|
+1082|[LoopEnd]|LoopEnd|1|0|Loop|||||1571|
+1083|[End If]|EndIf|1|0|If_Statement||||0x000000|1572|
+1084|Compare Variables|X = 8|1|0|If_Statement|||||1573|
+1085|[LoopStart]|LoopStart|0|0|Loop|||||1575|
+1086|OpenKeys|_null := Accounts|1|0|Function|||||1577|
+1087|[LoopEnd]|LoopEnd|1|0|Loop|||||1578|
+1088|[End If]|EndIf|1|0|If_Statement||||0x000000|1579|
+1089|Compare Variables|X = 9|1|0|If_Statement|||||1580|
+1090|Break||1|0|Break|||||1582|
+1091|[End If]|EndIf|1|0|If_Statement||||0x000000|1583|
+1092|[Assign Variable]|List := ["Fuse Pets","Deep pool fishing","Secret Key(WIP)","Back"]|1|0|Variable|Expression||||1584|
+1093|Menu|X := List|1|0|Function|||||1585|
+1094|Compare Variables|X = 1|1|0|If_Statement|||||1586|
+1095|[LoopStart]|LoopStart|0|0|Loop|||||1588|
+1096|FusePets|_null := Accounts|1|0|Function|||||1590|
+1097|AFK|_null := Accounts,0|1|0|Function|||||1591|
+1098|[LoopEnd]|LoopEnd|1|0|Loop|||||1592|
+1099|[End If]|EndIf|1|0|If_Statement||||0x000000|1593|
+1100|Compare Variables|X = 2|1|0|If_Statement|||||1594|
+1101|[LoopStart]|LoopStart|0|0|Loop|||||1596|
+1102|Fishing|_null := Accounts|1|0|Function|||||1598|
+1103|AFK|_null := Accounts,0|1|0|Function|||||1599|
+1104|[LoopEnd]|LoopEnd|1|0|Loop|||||1600|
+1105|[End If]|EndIf|1|0|If_Statement||||0x000000|1601|
+1106|Compare Variables|X = 3|1|0|If_Statement|||||1602|
+1107|[LoopStart]|LoopStart|0|0|Loop|||||1604|
+1108|KeyOpen|_null := |1|0|Function|||||1606|
+1109|[LoopEnd]|LoopEnd|1|0|Loop|||||1607|
+1110|[End If]|EndIf|1|0|If_Statement||||0x000000|1608|
+1111|Compare Variables|X = 4|1|0|If_Statement|||||1609|
+1112|Break||1|0|Break|||||1611|
+1113|[End If]|EndIf|1|0|If_Statement||||0x000000|1612|
+1114|[End If]|EndIf|1|0|If_Statement||||0x000000|1613|
+1115|Compare Variables|X = 2|1|0|If_Statement|||||1614|
+1116|[Assign Variable]|List := ["Get account IDs","Set file","set keybinds","Back"]|1|0|Variable|Expression||||1616|
+1117|Menu|X := List|1|0|Function|||||1617|
+1118|Compare Variables|X = 1|1|0|If_Statement|||||1618|
+1119|MultiAccount|Accounts := |1|0|Function|||||1620|
+1120|[End If]|EndIf|1|0|If_Statement|||||1621|
+1121|Compare Variables|X = 2|1|0|If_Statement|||||1622|
+1122|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event egg(AFK all)","Open Keys","Back","Next"]|1|0|Variable|Expression||||1624|
+1123|Menu|X := List|1|0|Function|||||1625|
+1124|Compare Variables|X = 1|1|0|If_Statement|||||1626|
+1125|[End If]|EndIf|1|0|If_Statement||||0x000000|1628|
+1126|Compare Variables|X = 2|1|0|If_Statement|||||1629|
+1127|[End If]|EndIf|1|0|If_Statement||||0x000000|1631|
+1128|Compare Variables|X = 3|1|0|If_Statement|||||1632|
+1129|[End If]|EndIf|1|0|If_Statement||||0x000000|1634|
+1130|Compare Variables|X = 4|1|0|If_Statement|||||1635|
+1131|[End If]|EndIf|1|0|If_Statement||||0x000000|1637|
+1132|Compare Variables|X = 5|1|0|If_Statement|||||1638|
+1133|[End If]|EndIf|1|0|If_Statement||||0x000000|1640|
+1134|Compare Variables|X = 6|1|0|If_Statement|||||1641|
+1135|[End If]|EndIf|1|0|If_Statement||||0x000000|1643|
+1136|Compare Variables|X = 7|1|0|If_Statement|||||1644|
+1137|[End If]|EndIf|1|0|If_Statement||||0x000000|1646|
+1138|Compare Variables|X = 8|1|0|If_Statement|||||1647|
+1139|[End If]|EndIf|1|0|If_Statement||||0x000000|1649|
+1140|Compare Variables|X = 9|1|0|If_Statement|||||1650|
+1141|Break||1|0|Break|||||1652|
+1142|[End If]|EndIf|1|0|If_Statement||||0x000000|1653|
+1143|[Assign Variable]|List := ["Fuse Pets","deep pool fishing","Back"]|1|0|Variable|Expression||||1654|
+1144|Menu|X := List|1|0|Function|||||1655|
+1145|Compare Variables|X = 1|1|0|If_Statement|||||1656|
+1146|[End If]|EndIf|1|0|If_Statement||||0x000000|1658|
+1147|Compare Variables|X = 2|1|0|If_Statement|||||1659|
+1148|[End If]|EndIf|1|0|If_Statement||||0x000000|1661|
+1149|[End If]|EndIf|1|0|If_Statement|||||1662|
+1150|Compare Variables|X = 3|1|0|If_Statement|||||1663|
+1151|Keybinds|_null := |1|0|Function|||||1665|
+1152|[Assign Variable]|x := 0|1|0|Variable|Expression||||1666|
+1153|[End If]|EndIf|1|0|If_Statement|||||1667|
+1154|Compare Variables|X = 4|1|0|If_Statement|||||1668|
+1155|[Assign Variable]|x := 0|1|0|Variable|Expression||||1670|
+1156|[End If]|EndIf|1|0|If_Statement|||||1671|
+1157|[End If]|EndIf|1|0|If_Statement|||||1672|
+1158|Compare Variables|X = 3|1|0|If_Statement|||||1673|
+1159|InputBox|m, Macros, macro made by @sosd35 with help by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||1675|
+1160|[End If]|EndIf|1|0|If_Statement|||||1676|
+1161|Compare Variables|X = 4|1|0|If_Statement|||||1677|
+1162|InputBox|m, Macros, coming soon, 5, 320, 200, 111, 111, , 0, type here|1|0|InputBox|||||1679|
+1163|[End If]|EndIf|1|0|If_Statement|||||1680|
+01164|[MsgBox]|% Accounts[1]|1|0|MsgBox|0||||1681|
+1165|[LoopEnd]|LoopEnd|1|0|Loop|||||1683|
+1166|[Assign Variable]|test := Accounts[1]|1|0|Variable|Expression||||1685|
+01167|ZoneTP|_null := "spawn"|1|0|Function|||||1686|
+01168|Break||1|0|Break|||||1688|
+1169|[Assign Variable]|temp := Accounts[1]|1|0|Variable|Expression||||1689|
+1170|StringLen|len, temp|1|0|StringLen|||||1691|
+1171|Compare Variables|len < 2|1|0|If_Statement|||||1692|
+1172|MultiAccount|Accounts := |1|0|Function|||||1694|
+1173|[End If]|EndIf|1|0|If_Statement|||||1695|
+1174|[LoopStart]|LoopStart|0|0|Loop|||||1696|
+1175|[Assign Variable]|test := Accounts[1]|1|0|Variable|Expression||||1698|
+1176|WinActivate||1|333|WinActivate||ahk_pid %test%|||1699|
+1177|If Window Not Active|AHK_PID %test%|1|0|If_Statement|||||1701|
+1178|[MsgBox]|Go to settings and correctly set your roblox IDs`nTo do so make sure you have all roblox tabs open to enable them`nType "2" for settings then type "1" to get the account(s)' id`nThen the accounts are set properly`n`nIf this same message pops up after doing the previous tasks`nGo to https://discord.gg/VpqY8kDD9v`nYou can also dm @the_cameraman_sos on discord for further help`n`nCopyright 2024`, DrSoyBoy and sosd35`, All rights reserved.|1|0|MsgBox|0||||1703|
+1179|[End If]|EndIf|1|0|If_Statement|||||1716|
+1180|[Assign Variable]|test := Accounts[3]|1|0|Variable|Expression||||1717|
+1181|[Assign Variable]|file := "C:\Users\101081383\Downloads"|1|0|Variable|Expression||||1718|
+1182|WinMove|%NAa%, %NAa%, 816, 638|1|0|WinMove||A|||1719|
+1183|[Assign Variable]|List := ["Macros","Settings","Credits","test"]|1|0|Variable|Expression||||1720|
+1184|Menu|X := List|1|0|Function|||||1721|
+1185|Compare Variables|X = 4|1|0|If_Statement|||||1722|
+1186|[LoopStart]|LoopStart|0|0|Loop|||||1724|
+1187|[Assign Variable]|i := 1|1|0|Variable|Expression||||1726|
+1188|autoRank|_null := Accounts[i]|1|0|Function|||||1727|
+1189|AFK|_null := Accounts,0|1|0|Function|||||1728|
+1190|[LoopEnd]|LoopEnd|1|0|Loop|||||1729|
+1191|[End If]|EndIf|1|0|If_Statement||||0x000000|1730|
+1192|Compare Variables|X = 1|1|0|If_Statement|||||1731|
+1193|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event (RNG Event)","Open Keys","Back","Next"]|1|0|Variable|Expression||||1733|
+1194|Menu|X := List|1|0|Function|||||1734|
+1195|Compare Variables|X = 1|1|0|If_Statement|||||1735|
+1196|[LoopStart]|LoopStart|0|0|Loop|||||1737|
+1197|DiamondSeed|_null := Accounts|1|0|Function|||||1739|
+1198|[LoopEnd]|LoopEnd|1|0|Loop|||||1740|
+1199|[End If]|EndIf|1|0|If_Statement||||0x000000|1741|
+1200|Compare Variables|X = 2|1|0|If_Statement|||||1742|
+1201|[LoopStart]|LoopStart|0|0|Loop|||||1744|
+1202|grind|_null := Accounts|1|0|Function|||||1746|
+1203|[LoopEnd]|LoopEnd|1|0|Loop|||||1747|
+1204|[End If]|EndIf|1|0|If_Statement||||0x000000|1748|
+1205|Compare Variables|X = 3|1|0|If_Statement|||||1749|
+1206|[LoopStart]|LoopStart|0|0|Loop|||||1751|
+1207|autoRank|_null := Accounts[i]|1|0|Function|||||1753|
+1208|[LoopEnd]|LoopEnd|1|0|Loop|||||1754|
+1209|[End If]|EndIf|1|0|If_Statement||||0x000000|1755|
+1210|Compare Variables|X = 4|1|0|If_Statement|||||1756|
+1211|[LoopStart]|LoopStart|0|0|Loop|||||1758|
+1212|EggGrind|_null := Accounts|1|0|Function|||||1760|
+1213|[LoopEnd]|LoopEnd|1|0|Loop|||||1761|
+1214|[End If]|EndIf|1|0|If_Statement||||0x000000|1762|
+1215|Compare Variables|X = 5|1|0|If_Statement|||||1763|
+1216|[LoopStart]|LoopStart|0|0|Loop|||||1765|
+1217|AFK|_null := Accounts|1|0|Function|||||1767|
+1218|[LoopEnd]|LoopEnd|1|0|Loop|||||1768|
+1219|[End If]|EndIf|1|0|If_Statement||||0x000000|1769|
+1220|Compare Variables|X = 6|1|0|If_Statement|||||1770|
+1221|[LoopStart]|LoopStart|0|0|Loop|||||1772|
+1222|CraftKeys|_null := |1|0|Function|||||1774|
+1223|[LoopEnd]|LoopEnd|1|0|Loop|||||1775|
+1224|[End If]|EndIf|1|0|If_Statement||||0x000000|1776|
+1225|Compare Variables|X = 7|1|0|If_Statement|||||1777|
+1226|[LoopStart]|LoopStart|0|0|Loop|||||1779|
+1227|event|_null := Accounts|1|0|Function|||||1781|
+1228|[LoopEnd]|LoopEnd|1|0|Loop|||||1782|
+1229|[End If]|EndIf|1|0|If_Statement||||0x000000|1783|
+1230|Compare Variables|X = 8|1|0|If_Statement|||||1784|
+1231|[LoopStart]|LoopStart|0|0|Loop|||||1786|
+1232|OpenKeys|_null := Accounts|1|0|Function|||||1788|
+1233|[LoopEnd]|LoopEnd|1|0|Loop|||||1789|
+1234|[End If]|EndIf|1|0|If_Statement||||0x000000|1790|
+1235|Compare Variables|X = 9|1|0|If_Statement|||||1791|
+1236|Break||1|0|Break|||||1793|
+1237|[End If]|EndIf|1|0|If_Statement||||0x000000|1794|
+1238|[Assign Variable]|List := ["Fuse Pets","Deep pool fishing","Secret Key(WIP)","Back"]|1|0|Variable|Expression||||1795|
+1239|Menu|X := List|1|0|Function|||||1796|
+1240|Compare Variables|X = 1|1|0|If_Statement|||||1797|
+1241|[LoopStart]|LoopStart|0|0|Loop|||||1799|
+1242|FusePets|_null := Accounts|1|0|Function|||||1801|
+1243|AFK|_null := Accounts,0|1|0|Function|||||1802|
+1244|[LoopEnd]|LoopEnd|1|0|Loop|||||1803|
+1245|[End If]|EndIf|1|0|If_Statement||||0x000000|1804|
+1246|Compare Variables|X = 2|1|0|If_Statement|||||1805|
+1247|[LoopStart]|LoopStart|0|0|Loop|||||1807|
+1248|Fishing|_null := Accounts|1|0|Function|||||1809|
+1249|AFK|_null := Accounts,0|1|0|Function|||||1810|
+1250|[LoopEnd]|LoopEnd|1|0|Loop|||||1811|
+1251|[End If]|EndIf|1|0|If_Statement||||0x000000|1812|
+1252|Compare Variables|X = 3|1|0|If_Statement|||||1813|
+1253|[LoopStart]|LoopStart|0|0|Loop|||||1815|
+1254|KeyOpen|_null := |1|0|Function|||||1817|
+1255|[LoopEnd]|LoopEnd|1|0|Loop|||||1818|
+1256|[End If]|EndIf|1|0|If_Statement||||0x000000|1819|
+1257|Compare Variables|X = 4|1|0|If_Statement|||||1820|
+1258|Break||1|0|Break|||||1822|
+1259|[End If]|EndIf|1|0|If_Statement||||0x000000|1823|
+1260|[End If]|EndIf|1|0|If_Statement||||0x000000|1824|
+1261|Compare Variables|X = 2|1|0|If_Statement|||||1825|
+1262|[Assign Variable]|List := ["Get account IDs","Set file","set keybinds","Back"]|1|0|Variable|Expression||||1827|
+1263|Menu|X := List|1|0|Function|||||1828|
+1264|Compare Variables|X = 1|1|0|If_Statement|||||1829|
+1265|MultiAccount|Accounts := |1|0|Function|||||1831|
+1266|[End If]|EndIf|1|0|If_Statement|||||1832|
+1267|Compare Variables|X = 2|1|0|If_Statement|||||1833|
+1268|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event egg(AFK all)","Open Keys","Back","Next"]|1|0|Variable|Expression||||1835|
+1269|Menu|X := List|1|0|Function|||||1836|
+1270|Compare Variables|X = 1|1|0|If_Statement|||||1837|
+1271|[End If]|EndIf|1|0|If_Statement||||0x000000|1839|
+1272|Compare Variables|X = 2|1|0|If_Statement|||||1840|
+1273|[End If]|EndIf|1|0|If_Statement||||0x000000|1842|
+1274|Compare Variables|X = 3|1|0|If_Statement|||||1843|
+1275|[End If]|EndIf|1|0|If_Statement||||0x000000|1845|
+1276|Compare Variables|X = 4|1|0|If_Statement|||||1846|
+1277|[End If]|EndIf|1|0|If_Statement||||0x000000|1848|
+1278|Compare Variables|X = 5|1|0|If_Statement|||||1849|
+1279|[End If]|EndIf|1|0|If_Statement||||0x000000|1851|
+1280|Compare Variables|X = 6|1|0|If_Statement|||||1852|
+1281|[End If]|EndIf|1|0|If_Statement||||0x000000|1854|
+1282|Compare Variables|X = 7|1|0|If_Statement|||||1855|
+1283|[End If]|EndIf|1|0|If_Statement||||0x000000|1857|
+1284|Compare Variables|X = 8|1|0|If_Statement|||||1858|
+1285|[End If]|EndIf|1|0|If_Statement||||0x000000|1860|
+1286|Compare Variables|X = 9|1|0|If_Statement|||||1861|
+1287|Break||1|0|Break|||||1863|
+1288|[End If]|EndIf|1|0|If_Statement||||0x000000|1864|
+1289|[Assign Variable]|List := ["Fuse Pets","deep pool fishing","Back"]|1|0|Variable|Expression||||1865|
+1290|Menu|X := List|1|0|Function|||||1866|
+1291|Compare Variables|X = 1|1|0|If_Statement|||||1867|
+1292|[End If]|EndIf|1|0|If_Statement||||0x000000|1869|
+1293|Compare Variables|X = 2|1|0|If_Statement|||||1870|
+1294|[End If]|EndIf|1|0|If_Statement||||0x000000|1872|
+1295|[End If]|EndIf|1|0|If_Statement|||||1873|
+1296|Compare Variables|X = 3|1|0|If_Statement|||||1874|
+1297|Keybinds|_null := |1|0|Function|||||1876|
+1298|[Assign Variable]|x := 0|1|0|Variable|Expression||||1877|
+1299|[End If]|EndIf|1|0|If_Statement|||||1878|
+1300|Compare Variables|X = 4|1|0|If_Statement|||||1879|
+1301|[Assign Variable]|x := 0|1|0|Variable|Expression||||1881|
+1302|[End If]|EndIf|1|0|If_Statement|||||1882|
+1303|[End If]|EndIf|1|0|If_Statement|||||1883|
+1304|Compare Variables|X = 3|1|0|If_Statement|||||1884|
+1305|InputBox|m, Macros, macro made by @sosd35 with help by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||1886|
+1306|[End If]|EndIf|1|0|If_Statement|||||1887|
+1307|Compare Variables|X = 4|1|0|If_Statement|||||1888|
+1308|InputBox|m, Macros, coming soon, 5, 320, 200, 111, 111, , 0, type here|1|0|InputBox|||||1890|
+1309|[End If]|EndIf|1|0|If_Statement|||||1891|
+01310|[MsgBox]|% Accounts[1]|1|0|MsgBox|0||||1892|
+1311|[LoopEnd]|LoopEnd|1|0|Loop|||||1894|
+1312|[MsgBox]|press enter to start|1|0|MsgBox|0||||1896|
+01313|ZoneTP|_null := "spawn"|1|0|Function|||||1897|
+01314|Break||1|0|Break|||||1899|
+1315|[Assign Variable]|temp := Accounts[1]|1|0|Variable|Expression||||1900|
+1316|StringLen|len, temp|1|0|StringLen|||||1902|
+1317|Compare Variables|len < 2|1|0|If_Statement|||||1903|
+1318|MultiAccount|Accounts := |1|0|Function|||||1905|
+1319|[End If]|EndIf|1|0|If_Statement|||||1906|
+1320|[LoopStart]|LoopStart|0|0|Loop|||||1907|
+1321|[Assign Variable]|test := Accounts[1]|1|0|Variable|Expression||||1909|
+1322|WinActivate||1|333|WinActivate||ahk_pid %test%|||1910|
+1323|If Window Not Active|AHK_PID %test%|1|0|If_Statement|||||1912|
+1324|[MsgBox]|Go to settings and correctly set your roblox IDs`nTo do so make sure you have all roblox tabs open to enable them`nType "2" for settings then type "1" to get the account(s)' id`nThen the accounts are set properly`n`nIf this same message pops up after doing the previous tasks`nGo to https://discord.gg/VpqY8kDD9v`nYou can also dm @the_cameraman_sos on discord for further help`n`nCopyright 2024`, DrSoyBoy and sosd35`, All rights reserved.|1|0|MsgBox|0||||1914|
+1325|[End If]|EndIf|1|0|If_Statement|||||1927|
+1326|[Assign Variable]|test := Accounts[3]|1|0|Variable|Expression||||1928|
+1327|[Assign Variable]|file := "C:\Users\101081383\Downloads"|1|0|Variable|Expression||||1929|
+1328|WinMove|%NAa%, %NAa%, 816, 638|1|0|WinMove||A|||1930|
+1329|[Assign Variable]|List := ["Macros","Settings","Credits","test"]|1|0|Variable|Expression||||1931|
+1330|Menu|X := List|1|0|Function|||||1932|
+1331|Compare Variables|X = 4|1|0|If_Statement|||||1933|
+1332|[LoopStart]|LoopStart|0|0|Loop|||||1935|
+1333|[Assign Variable]|i := 1|1|0|Variable|Expression||||1937|
+1334|autoRank|_null := Accounts[i]|1|0|Function|||||1938|
+1335|AFK|_null := Accounts,0|1|0|Function|||||1939|
+1336|[LoopEnd]|LoopEnd|1|0|Loop|||||1940|
+1337|[End If]|EndIf|1|0|If_Statement||||0x000000|1941|
+1338|Compare Variables|X = 1|1|0|If_Statement|||||1942|
+1339|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event (RNG Event)","Open Keys","Back","Next"]|1|0|Variable|Expression||||1944|
+1340|Menu|X := List|1|0|Function|||||1945|
+1341|Compare Variables|X = 1|1|0|If_Statement|||||1946|
+1342|[LoopStart]|LoopStart|0|0|Loop|||||1948|
+1343|DiamondSeed|_null := Accounts|1|0|Function|||||1950|
+1344|[LoopEnd]|LoopEnd|1|0|Loop|||||1951|
+1345|[End If]|EndIf|1|0|If_Statement||||0x000000|1952|
+1346|Compare Variables|X = 2|1|0|If_Statement|||||1953|
+1347|[LoopStart]|LoopStart|0|0|Loop|||||1955|
+1348|grind|_null := Accounts|1|0|Function|||||1957|
+1349|[LoopEnd]|LoopEnd|1|0|Loop|||||1958|
+1350|[End If]|EndIf|1|0|If_Statement||||0x000000|1959|
+1351|Compare Variables|X = 3|1|0|If_Statement|||||1960|
+1352|[LoopStart]|LoopStart|0|0|Loop|||||1962|
+1353|autoRank|_null := Accounts[i]|1|0|Function|||||1964|
+1354|[LoopEnd]|LoopEnd|1|0|Loop|||||1965|
+1355|[End If]|EndIf|1|0|If_Statement||||0x000000|1966|
+1356|Compare Variables|X = 4|1|0|If_Statement|||||1967|
+1357|[LoopStart]|LoopStart|0|0|Loop|||||1969|
+1358|EggGrind|_null := Accounts|1|0|Function|||||1971|
+1359|[LoopEnd]|LoopEnd|1|0|Loop|||||1972|
+1360|[End If]|EndIf|1|0|If_Statement||||0x000000|1973|
+1361|Compare Variables|X = 5|1|0|If_Statement|||||1974|
+1362|[LoopStart]|LoopStart|0|0|Loop|||||1976|
+1363|AFK|_null := Accounts|1|0|Function|||||1978|
+1364|[LoopEnd]|LoopEnd|1|0|Loop|||||1979|
+1365|[End If]|EndIf|1|0|If_Statement||||0x000000|1980|
+1366|Compare Variables|X = 6|1|0|If_Statement|||||1981|
+1367|[LoopStart]|LoopStart|0|0|Loop|||||1983|
+1368|CraftKeys|_null := |1|0|Function|||||1985|
+1369|[LoopEnd]|LoopEnd|1|0|Loop|||||1986|
+1370|[End If]|EndIf|1|0|If_Statement||||0x000000|1987|
+1371|Compare Variables|X = 7|1|0|If_Statement|||||1988|
+1372|[LoopStart]|LoopStart|0|0|Loop|||||1990|
+1373|event|_null := Accounts|1|0|Function|||||1992|
+1374|[LoopEnd]|LoopEnd|1|0|Loop|||||1993|
+1375|[End If]|EndIf|1|0|If_Statement||||0x000000|1994|
+1376|Compare Variables|X = 8|1|0|If_Statement|||||1995|
+1377|[LoopStart]|LoopStart|0|0|Loop|||||1997|
+1378|OpenKeys|_null := Accounts|1|0|Function|||||1999|
+1379|[LoopEnd]|LoopEnd|1|0|Loop|||||2000|
+1380|[End If]|EndIf|1|0|If_Statement||||0x000000|2001|
+1381|Compare Variables|X = 9|1|0|If_Statement|||||2002|
+1382|Break||1|0|Break|||||2004|
+1383|[End If]|EndIf|1|0|If_Statement||||0x000000|2005|
+1384|[Assign Variable]|List := ["Fuse Pets","Deep pool fishing","Secret Key(WIP)","Back"]|1|0|Variable|Expression||||2006|
+1385|Menu|X := List|1|0|Function|||||2007|
+1386|Compare Variables|X = 1|1|0|If_Statement|||||2008|
+1387|[LoopStart]|LoopStart|0|0|Loop|||||2010|
+1388|FusePets|_null := Accounts|1|0|Function|||||2012|
+1389|AFK|_null := Accounts,0|1|0|Function|||||2013|
+1390|[LoopEnd]|LoopEnd|1|0|Loop|||||2014|
+1391|[End If]|EndIf|1|0|If_Statement||||0x000000|2015|
+1392|Compare Variables|X = 2|1|0|If_Statement|||||2016|
+1393|[LoopStart]|LoopStart|0|0|Loop|||||2018|
+1394|Fishing|_null := Accounts|1|0|Function|||||2020|
+1395|AFK|_null := Accounts,0|1|0|Function|||||2021|
+1396|[LoopEnd]|LoopEnd|1|0|Loop|||||2022|
+1397|[End If]|EndIf|1|0|If_Statement||||0x000000|2023|
+1398|Compare Variables|X = 3|1|0|If_Statement|||||2024|
+1399|[LoopStart]|LoopStart|0|0|Loop|||||2026|
+1400|KeyOpen|_null := |1|0|Function|||||2028|
+1401|[LoopEnd]|LoopEnd|1|0|Loop|||||2029|
+1402|[End If]|EndIf|1|0|If_Statement||||0x000000|2030|
+1403|Compare Variables|X = 4|1|0|If_Statement|||||2031|
+1404|Break||1|0|Break|||||2033|
+1405|[End If]|EndIf|1|0|If_Statement||||0x000000|2034|
+1406|[End If]|EndIf|1|0|If_Statement||||0x000000|2035|
+1407|Compare Variables|X = 2|1|0|If_Statement|||||2036|
+1408|[Assign Variable]|List := ["Get account IDs","Set file","set keybinds","Back"]|1|0|Variable|Expression||||2038|
+1409|Menu|X := List|1|0|Function|||||2039|
+1410|Compare Variables|X = 1|1|0|If_Statement|||||2040|
+1411|MultiAccount|Accounts := |1|0|Function|||||2042|
+1412|[End If]|EndIf|1|0|If_Statement|||||2043|
+1413|Compare Variables|X = 2|1|0|If_Statement|||||2044|
+1414|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event egg(AFK all)","Open Keys","Back","Next"]|1|0|Variable|Expression||||2046|
+1415|Menu|X := List|1|0|Function|||||2047|
+1416|Compare Variables|X = 1|1|0|If_Statement|||||2048|
+1417|[End If]|EndIf|1|0|If_Statement||||0x000000|2050|
+1418|Compare Variables|X = 2|1|0|If_Statement|||||2051|
+1419|[End If]|EndIf|1|0|If_Statement||||0x000000|2053|
+1420|Compare Variables|X = 3|1|0|If_Statement|||||2054|
+1421|[End If]|EndIf|1|0|If_Statement||||0x000000|2056|
+1422|Compare Variables|X = 4|1|0|If_Statement|||||2057|
+1423|[End If]|EndIf|1|0|If_Statement||||0x000000|2059|
+1424|Compare Variables|X = 5|1|0|If_Statement|||||2060|
+1425|[End If]|EndIf|1|0|If_Statement||||0x000000|2062|
+1426|Compare Variables|X = 6|1|0|If_Statement|||||2063|
+1427|[End If]|EndIf|1|0|If_Statement||||0x000000|2065|
+1428|Compare Variables|X = 7|1|0|If_Statement|||||2066|
+1429|[End If]|EndIf|1|0|If_Statement||||0x000000|2068|
+1430|Compare Variables|X = 8|1|0|If_Statement|||||2069|
+1431|[End If]|EndIf|1|0|If_Statement||||0x000000|2071|
+1432|Compare Variables|X = 9|1|0|If_Statement|||||2072|
+1433|Break||1|0|Break|||||2074|
+1434|[End If]|EndIf|1|0|If_Statement||||0x000000|2075|
+1435|[Assign Variable]|List := ["Fuse Pets","deep pool fishing","Back"]|1|0|Variable|Expression||||2076|
+1436|Menu|X := List|1|0|Function|||||2077|
+1437|Compare Variables|X = 1|1|0|If_Statement|||||2078|
+1438|[End If]|EndIf|1|0|If_Statement||||0x000000|2080|
+1439|Compare Variables|X = 2|1|0|If_Statement|||||2081|
+1440|[End If]|EndIf|1|0|If_Statement||||0x000000|2083|
+1441|[End If]|EndIf|1|0|If_Statement|||||2084|
+1442|Compare Variables|X = 3|1|0|If_Statement|||||2085|
+1443|Keybinds|_null := |1|0|Function|||||2087|
+1444|[Assign Variable]|x := 0|1|0|Variable|Expression||||2088|
+1445|[End If]|EndIf|1|0|If_Statement|||||2089|
+1446|Compare Variables|X = 4|1|0|If_Statement|||||2090|
+1447|[Assign Variable]|x := 0|1|0|Variable|Expression||||2092|
+1448|[End If]|EndIf|1|0|If_Statement|||||2093|
+1449|[End If]|EndIf|1|0|If_Statement|||||2094|
+1450|Compare Variables|X = 3|1|0|If_Statement|||||2095|
+1451|InputBox|m, Macros, macro made by @sosd35 with help by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||2097|
+1452|[End If]|EndIf|1|0|If_Statement|||||2098|
+1453|Compare Variables|X = 4|1|0|If_Statement|||||2099|
+1454|InputBox|m, Macros, coming soon, 5, 320, 200, 111, 111, , 0, type here|1|0|InputBox|||||2101|
+1455|[End If]|EndIf|1|0|If_Statement|||||2102|
+01456|[MsgBox]|% Accounts[1]|1|0|MsgBox|0||||2103|
+1457|[LoopEnd]|LoopEnd|1|0|Loop|||||2105|
+1458|[LoopStart]|LoopStart|0|0|Loop|||||2107|
+01459|ZoneTP|_null := "spawn"|1|0|Function|||||2109|
+01460|Break||1|0|Break|||||2111|
+1461|[Assign Variable]|temp := Accounts[1]|1|0|Variable|Expression||||2112|
+1462|StringLen|len, temp|1|0|StringLen|||||2114|
+1463|Compare Variables|len < 2|1|0|If_Statement|||||2115|
+1464|MultiAccount|Accounts := |1|0|Function|||||2117|
+1465|[End If]|EndIf|1|0|If_Statement|||||2118|
+1466|[LoopStart]|LoopStart|0|0|Loop|||||2119|
+1467|[Assign Variable]|test := Accounts[1]|1|0|Variable|Expression||||2121|
+1468|WinActivate||1|333|WinActivate||ahk_pid %test%|||2122|
+1469|If Window Not Active|AHK_PID %test%|1|0|If_Statement|||||2124|
+1470|[MsgBox]|Go to settings and correctly set your roblox IDs`nTo do so make sure you have all roblox tabs open to enable them`nType "2" for settings then type "1" to get the account(s)' id`nThen the accounts are set properly`n`nIf this same message pops up after doing the previous tasks`nGo to https://discord.gg/VpqY8kDD9v`nYou can also dm @the_cameraman_sos on discord for further help`n`nCopyright 2024`, DrSoyBoy and sosd35`, All rights reserved.|1|0|MsgBox|0||||2126|
+1471|[End If]|EndIf|1|0|If_Statement|||||2139|
+1472|[Assign Variable]|test := Accounts[3]|1|0|Variable|Expression||||2140|
+1473|[Assign Variable]|file := "C:\Users\101081383\Downloads"|1|0|Variable|Expression||||2141|
+1474|WinMove|%NAa%, %NAa%, 816, 638|1|0|WinMove||A|||2142|
+1475|[Assign Variable]|List := ["Macros","Settings","Credits","test"]|1|0|Variable|Expression||||2143|
+1476|Menu|X := List|1|0|Function|||||2144|
+1477|Compare Variables|X = 4|1|0|If_Statement|||||2145|
+1478|[LoopStart]|LoopStart|0|0|Loop|||||2147|
+1479|[Assign Variable]|i := 1|1|0|Variable|Expression||||2149|
+1480|autoRank|_null := Accounts[i]|1|0|Function|||||2150|
+1481|AFK|_null := Accounts,0|1|0|Function|||||2151|
+1482|[LoopEnd]|LoopEnd|1|0|Loop|||||2152|
+1483|[End If]|EndIf|1|0|If_Statement||||0x000000|2153|
+1484|Compare Variables|X = 1|1|0|If_Statement|||||2154|
+1485|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event (RNG Event)","Open Keys","Back","Next"]|1|0|Variable|Expression||||2156|
+1486|Menu|X := List|1|0|Function|||||2157|
+1487|Compare Variables|X = 1|1|0|If_Statement|||||2158|
+1488|[LoopStart]|LoopStart|0|0|Loop|||||2160|
+1489|DiamondSeed|_null := Accounts|1|0|Function|||||2162|
+1490|[LoopEnd]|LoopEnd|1|0|Loop|||||2163|
+1491|[End If]|EndIf|1|0|If_Statement||||0x000000|2164|
+1492|Compare Variables|X = 2|1|0|If_Statement|||||2165|
+1493|[LoopStart]|LoopStart|0|0|Loop|||||2167|
+1494|grind|_null := Accounts|1|0|Function|||||2169|
+1495|[LoopEnd]|LoopEnd|1|0|Loop|||||2170|
+1496|[End If]|EndIf|1|0|If_Statement||||0x000000|2171|
+1497|Compare Variables|X = 3|1|0|If_Statement|||||2172|
+1498|[LoopStart]|LoopStart|0|0|Loop|||||2174|
+1499|autoRank|_null := Accounts[i]|1|0|Function|||||2176|
+1500|[LoopEnd]|LoopEnd|1|0|Loop|||||2177|
+1501|[End If]|EndIf|1|0|If_Statement||||0x000000|2178|
+1502|Compare Variables|X = 4|1|0|If_Statement|||||2179|
+1503|[LoopStart]|LoopStart|0|0|Loop|||||2181|
+1504|EggGrind|_null := Accounts|1|0|Function|||||2183|
+1505|[LoopEnd]|LoopEnd|1|0|Loop|||||2184|
+1506|[End If]|EndIf|1|0|If_Statement||||0x000000|2185|
+1507|Compare Variables|X = 5|1|0|If_Statement|||||2186|
+1508|[LoopStart]|LoopStart|0|0|Loop|||||2188|
+1509|AFK|_null := Accounts|1|0|Function|||||2190|
+1510|[LoopEnd]|LoopEnd|1|0|Loop|||||2191|
+1511|[End If]|EndIf|1|0|If_Statement||||0x000000|2192|
+1512|Compare Variables|X = 6|1|0|If_Statement|||||2193|
+1513|[LoopStart]|LoopStart|0|0|Loop|||||2195|
+1514|CraftKeys|_null := |1|0|Function|||||2197|
+1515|[LoopEnd]|LoopEnd|1|0|Loop|||||2198|
+1516|[End If]|EndIf|1|0|If_Statement||||0x000000|2199|
+1517|Compare Variables|X = 7|1|0|If_Statement|||||2200|
+1518|[LoopStart]|LoopStart|0|0|Loop|||||2202|
+1519|event|_null := Accounts|1|0|Function|||||2204|
+1520|[LoopEnd]|LoopEnd|1|0|Loop|||||2205|
+1521|[End If]|EndIf|1|0|If_Statement||||0x000000|2206|
+1522|Compare Variables|X = 8|1|0|If_Statement|||||2207|
+1523|[LoopStart]|LoopStart|0|0|Loop|||||2209|
+1524|OpenKeys|_null := Accounts|1|0|Function|||||2211|
+1525|[LoopEnd]|LoopEnd|1|0|Loop|||||2212|
+1526|[End If]|EndIf|1|0|If_Statement||||0x000000|2213|
+1527|Compare Variables|X = 9|1|0|If_Statement|||||2214|
+1528|Break||1|0|Break|||||2216|
+1529|[End If]|EndIf|1|0|If_Statement||||0x000000|2217|
+1530|[Assign Variable]|List := ["Fuse Pets","Deep pool fishing","Secret Key(WIP)","Back"]|1|0|Variable|Expression||||2218|
+1531|Menu|X := List|1|0|Function|||||2219|
+1532|Compare Variables|X = 1|1|0|If_Statement|||||2220|
+1533|[LoopStart]|LoopStart|0|0|Loop|||||2222|
+1534|FusePets|_null := Accounts|1|0|Function|||||2224|
+1535|AFK|_null := Accounts,0|1|0|Function|||||2225|
+1536|[LoopEnd]|LoopEnd|1|0|Loop|||||2226|
+1537|[End If]|EndIf|1|0|If_Statement||||0x000000|2227|
+1538|Compare Variables|X = 2|1|0|If_Statement|||||2228|
+1539|[LoopStart]|LoopStart|0|0|Loop|||||2230|
+1540|Fishing|_null := Accounts|1|0|Function|||||2232|
+1541|AFK|_null := Accounts,0|1|0|Function|||||2233|
+1542|[LoopEnd]|LoopEnd|1|0|Loop|||||2234|
+1543|[End If]|EndIf|1|0|If_Statement||||0x000000|2235|
+1544|Compare Variables|X = 3|1|0|If_Statement|||||2236|
+1545|[LoopStart]|LoopStart|0|0|Loop|||||2238|
+1546|KeyOpen|_null := |1|0|Function|||||2240|
+1547|[LoopEnd]|LoopEnd|1|0|Loop|||||2241|
+1548|[End If]|EndIf|1|0|If_Statement||||0x000000|2242|
+1549|Compare Variables|X = 4|1|0|If_Statement|||||2243|
+1550|Break||1|0|Break|||||2245|
+1551|[End If]|EndIf|1|0|If_Statement||||0x000000|2246|
+1552|[End If]|EndIf|1|0|If_Statement||||0x000000|2247|
+1553|Compare Variables|X = 2|1|0|If_Statement|||||2248|
+1554|[Assign Variable]|List := ["Get account IDs","Set file","set keybinds","Back"]|1|0|Variable|Expression||||2250|
+1555|Menu|X := List|1|0|Function|||||2251|
+1556|Compare Variables|X = 1|1|0|If_Statement|||||2252|
+1557|MultiAccount|Accounts := |1|0|Function|||||2254|
+1558|[End If]|EndIf|1|0|If_Statement|||||2255|
+1559|Compare Variables|X = 2|1|0|If_Statement|||||2256|
+1560|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event egg(AFK all)","Open Keys","Back","Next"]|1|0|Variable|Expression||||2258|
+1561|Menu|X := List|1|0|Function|||||2259|
+1562|Compare Variables|X = 1|1|0|If_Statement|||||2260|
+1563|[End If]|EndIf|1|0|If_Statement||||0x000000|2262|
+1564|Compare Variables|X = 2|1|0|If_Statement|||||2263|
+1565|[End If]|EndIf|1|0|If_Statement||||0x000000|2265|
+1566|Compare Variables|X = 3|1|0|If_Statement|||||2266|
+1567|[End If]|EndIf|1|0|If_Statement||||0x000000|2268|
+1568|Compare Variables|X = 4|1|0|If_Statement|||||2269|
+1569|[End If]|EndIf|1|0|If_Statement||||0x000000|2271|
+1570|Compare Variables|X = 5|1|0|If_Statement|||||2272|
+1571|[End If]|EndIf|1|0|If_Statement||||0x000000|2274|
+1572|Compare Variables|X = 6|1|0|If_Statement|||||2275|
+1573|[End If]|EndIf|1|0|If_Statement||||0x000000|2277|
+1574|Compare Variables|X = 7|1|0|If_Statement|||||2278|
+1575|[End If]|EndIf|1|0|If_Statement||||0x000000|2280|
+1576|Compare Variables|X = 8|1|0|If_Statement|||||2281|
+1577|[End If]|EndIf|1|0|If_Statement||||0x000000|2283|
+1578|Compare Variables|X = 9|1|0|If_Statement|||||2284|
+1579|Break||1|0|Break|||||2286|
+1580|[End If]|EndIf|1|0|If_Statement||||0x000000|2287|
+1581|[Assign Variable]|List := ["Fuse Pets","deep pool fishing","Back"]|1|0|Variable|Expression||||2288|
+1582|Menu|X := List|1|0|Function|||||2289|
+1583|Compare Variables|X = 1|1|0|If_Statement|||||2290|
+1584|[End If]|EndIf|1|0|If_Statement||||0x000000|2292|
+1585|Compare Variables|X = 2|1|0|If_Statement|||||2293|
+1586|[End If]|EndIf|1|0|If_Statement||||0x000000|2295|
+1587|[End If]|EndIf|1|0|If_Statement|||||2296|
+1588|Compare Variables|X = 3|1|0|If_Statement|||||2297|
+1589|Keybinds|_null := |1|0|Function|||||2299|
+1590|[Assign Variable]|x := 0|1|0|Variable|Expression||||2300|
+1591|[End If]|EndIf|1|0|If_Statement|||||2301|
+1592|Compare Variables|X = 4|1|0|If_Statement|||||2302|
+1593|[Assign Variable]|x := 0|1|0|Variable|Expression||||2304|
+1594|[End If]|EndIf|1|0|If_Statement|||||2305|
+1595|[End If]|EndIf|1|0|If_Statement|||||2306|
+1596|Compare Variables|X = 3|1|0|If_Statement|||||2307|
+1597|InputBox|m, Macros, macro made by @sosd35 with help by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||2309|
+1598|[End If]|EndIf|1|0|If_Statement|||||2310|
+1599|Compare Variables|X = 4|1|0|If_Statement|||||2311|
+1600|InputBox|m, Macros, coming soon, 5, 320, 200, 111, 111, , 0, type here|1|0|InputBox|||||2313|
+1601|[End If]|EndIf|1|0|If_Statement|||||2314|
+01602|[MsgBox]|% Accounts[1]|1|0|MsgBox|0||||2315|
+1603|[LoopEnd]|LoopEnd|1|0|Loop|||||2317|
+1604|event|_null := Accounts|1|0|Function|||||2319|
+01605|ZoneTP|_null := "spawn"|1|0|Function|||||2320|
+01606|Break||1|0|Break|||||2322|
+1607|[Assign Variable]|temp := Accounts[1]|1|0|Variable|Expression||||2323|
+1608|StringLen|len, temp|1|0|StringLen|||||2325|
+1609|Compare Variables|len < 2|1|0|If_Statement|||||2326|
+1610|MultiAccount|Accounts := |1|0|Function|||||2328|
+1611|[End If]|EndIf|1|0|If_Statement|||||2329|
+1612|[LoopStart]|LoopStart|0|0|Loop|||||2330|
+1613|[Assign Variable]|test := Accounts[1]|1|0|Variable|Expression||||2332|
+1614|WinActivate||1|333|WinActivate||ahk_pid %test%|||2333|
+1615|If Window Not Active|AHK_PID %test%|1|0|If_Statement|||||2335|
+1616|[MsgBox]|Go to settings and correctly set your roblox IDs`nTo do so make sure you have all roblox tabs open to enable them`nType "2" for settings then type "1" to get the account(s)' id`nThen the accounts are set properly`n`nIf this same message pops up after doing the previous tasks`nGo to https://discord.gg/VpqY8kDD9v`nYou can also dm @the_cameraman_sos on discord for further help`n`nCopyright 2024`, DrSoyBoy and sosd35`, All rights reserved.|1|0|MsgBox|0||||2337|
+1617|[End If]|EndIf|1|0|If_Statement|||||2350|
+1618|[Assign Variable]|test := Accounts[3]|1|0|Variable|Expression||||2351|
+1619|[Assign Variable]|file := "C:\Users\101081383\Downloads"|1|0|Variable|Expression||||2352|
+1620|WinMove|%NAa%, %NAa%, 816, 638|1|0|WinMove||A|||2353|
+1621|[Assign Variable]|List := ["Macros","Settings","Credits","test"]|1|0|Variable|Expression||||2354|
+1622|Menu|X := List|1|0|Function|||||2355|
+1623|Compare Variables|X = 4|1|0|If_Statement|||||2356|
+1624|[LoopStart]|LoopStart|0|0|Loop|||||2358|
+1625|[Assign Variable]|i := 1|1|0|Variable|Expression||||2360|
+1626|autoRank|_null := Accounts[i]|1|0|Function|||||2361|
+1627|AFK|_null := Accounts,0|1|0|Function|||||2362|
+1628|[LoopEnd]|LoopEnd|1|0|Loop|||||2363|
+1629|[End If]|EndIf|1|0|If_Statement||||0x000000|2364|
+1630|Compare Variables|X = 1|1|0|If_Statement|||||2365|
+1631|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event (RNG Event)","Open Keys","Back","Next"]|1|0|Variable|Expression||||2367|
+1632|Menu|X := List|1|0|Function|||||2368|
+1633|Compare Variables|X = 1|1|0|If_Statement|||||2369|
+1634|[LoopStart]|LoopStart|0|0|Loop|||||2371|
+1635|DiamondSeed|_null := Accounts|1|0|Function|||||2373|
+1636|[LoopEnd]|LoopEnd|1|0|Loop|||||2374|
+1637|[End If]|EndIf|1|0|If_Statement||||0x000000|2375|
+1638|Compare Variables|X = 2|1|0|If_Statement|||||2376|
+1639|[LoopStart]|LoopStart|0|0|Loop|||||2378|
+1640|grind|_null := Accounts|1|0|Function|||||2380|
+1641|[LoopEnd]|LoopEnd|1|0|Loop|||||2381|
+1642|[End If]|EndIf|1|0|If_Statement||||0x000000|2382|
+1643|Compare Variables|X = 3|1|0|If_Statement|||||2383|
+1644|[LoopStart]|LoopStart|0|0|Loop|||||2385|
+1645|autoRank|_null := Accounts[i]|1|0|Function|||||2387|
+1646|[LoopEnd]|LoopEnd|1|0|Loop|||||2388|
+1647|[End If]|EndIf|1|0|If_Statement||||0x000000|2389|
+1648|Compare Variables|X = 4|1|0|If_Statement|||||2390|
+1649|[LoopStart]|LoopStart|0|0|Loop|||||2392|
+1650|EggGrind|_null := Accounts|1|0|Function|||||2394|
+1651|[LoopEnd]|LoopEnd|1|0|Loop|||||2395|
+1652|[End If]|EndIf|1|0|If_Statement||||0x000000|2396|
+1653|Compare Variables|X = 5|1|0|If_Statement|||||2397|
+1654|[LoopStart]|LoopStart|0|0|Loop|||||2399|
+1655|AFK|_null := Accounts|1|0|Function|||||2401|
+1656|[LoopEnd]|LoopEnd|1|0|Loop|||||2402|
+1657|[End If]|EndIf|1|0|If_Statement||||0x000000|2403|
+1658|Compare Variables|X = 6|1|0|If_Statement|||||2404|
+1659|[LoopStart]|LoopStart|0|0|Loop|||||2406|
+1660|CraftKeys|_null := |1|0|Function|||||2408|
+1661|[LoopEnd]|LoopEnd|1|0|Loop|||||2409|
+1662|[End If]|EndIf|1|0|If_Statement||||0x000000|2410|
+1663|Compare Variables|X = 7|1|0|If_Statement|||||2411|
+1664|[LoopStart]|LoopStart|0|0|Loop|||||2413|
+1665|event|_null := Accounts|1|0|Function|||||2415|
+1666|[LoopEnd]|LoopEnd|1|0|Loop|||||2416|
+1667|[End If]|EndIf|1|0|If_Statement||||0x000000|2417|
+1668|Compare Variables|X = 8|1|0|If_Statement|||||2418|
+1669|[LoopStart]|LoopStart|0|0|Loop|||||2420|
+1670|OpenKeys|_null := Accounts|1|0|Function|||||2422|
+1671|[LoopEnd]|LoopEnd|1|0|Loop|||||2423|
+1672|[End If]|EndIf|1|0|If_Statement||||0x000000|2424|
+1673|Compare Variables|X = 9|1|0|If_Statement|||||2425|
+1674|Break||1|0|Break|||||2427|
+1675|[End If]|EndIf|1|0|If_Statement||||0x000000|2428|
+1676|[Assign Variable]|List := ["Fuse Pets","Deep pool fishing","Secret Key(WIP)","Back"]|1|0|Variable|Expression||||2429|
+1677|Menu|X := List|1|0|Function|||||2430|
+1678|Compare Variables|X = 1|1|0|If_Statement|||||2431|
+1679|[LoopStart]|LoopStart|0|0|Loop|||||2433|
+1680|FusePets|_null := Accounts|1|0|Function|||||2435|
+1681|AFK|_null := Accounts,0|1|0|Function|||||2436|
+1682|[LoopEnd]|LoopEnd|1|0|Loop|||||2437|
+1683|[End If]|EndIf|1|0|If_Statement||||0x000000|2438|
+1684|Compare Variables|X = 2|1|0|If_Statement|||||2439|
+1685|[LoopStart]|LoopStart|0|0|Loop|||||2441|
+1686|Fishing|_null := Accounts|1|0|Function|||||2443|
+1687|AFK|_null := Accounts,0|1|0|Function|||||2444|
+1688|[LoopEnd]|LoopEnd|1|0|Loop|||||2445|
+1689|[End If]|EndIf|1|0|If_Statement||||0x000000|2446|
+1690|Compare Variables|X = 3|1|0|If_Statement|||||2447|
+1691|[LoopStart]|LoopStart|0|0|Loop|||||2449|
+1692|KeyOpen|_null := |1|0|Function|||||2451|
+1693|[LoopEnd]|LoopEnd|1|0|Loop|||||2452|
+1694|[End If]|EndIf|1|0|If_Statement||||0x000000|2453|
+1695|Compare Variables|X = 4|1|0|If_Statement|||||2454|
+1696|Break||1|0|Break|||||2456|
+1697|[End If]|EndIf|1|0|If_Statement||||0x000000|2457|
+1698|[End If]|EndIf|1|0|If_Statement||||0x000000|2458|
+1699|Compare Variables|X = 2|1|0|If_Statement|||||2459|
+1700|[Assign Variable]|List := ["Get account IDs","Set file","set keybinds","Back"]|1|0|Variable|Expression||||2461|
+1701|Menu|X := List|1|0|Function|||||2462|
+1702|Compare Variables|X = 1|1|0|If_Statement|||||2463|
+1703|MultiAccount|Accounts := |1|0|Function|||||2465|
+1704|[End If]|EndIf|1|0|If_Statement|||||2466|
+1705|Compare Variables|X = 2|1|0|If_Statement|||||2467|
+1706|[Assign Variable]|List := ["Diamond Seed","Grind","Auto Rank-up","Egg Grind","afk","Craft Keys","Event egg(AFK all)","Open Keys","Back","Next"]|1|0|Variable|Expression||||2469|
+1707|Menu|X := List|1|0|Function|||||2470|
+1708|Compare Variables|X = 1|1|0|If_Statement|||||2471|
+1709|[End If]|EndIf|1|0|If_Statement||||0x000000|2473|
+1710|Compare Variables|X = 2|1|0|If_Statement|||||2474|
+1711|[End If]|EndIf|1|0|If_Statement||||0x000000|2476|
+1712|Compare Variables|X = 3|1|0|If_Statement|||||2477|
+1713|[End If]|EndIf|1|0|If_Statement||||0x000000|2479|
+1714|Compare Variables|X = 4|1|0|If_Statement|||||2480|
+1715|[End If]|EndIf|1|0|If_Statement||||0x000000|2482|
+1716|Compare Variables|X = 5|1|0|If_Statement|||||2483|
+1717|[End If]|EndIf|1|0|If_Statement||||0x000000|2485|
+1718|Compare Variables|X = 6|1|0|If_Statement|||||2486|
+1719|[End If]|EndIf|1|0|If_Statement||||0x000000|2488|
+1720|Compare Variables|X = 7|1|0|If_Statement|||||2489|
+1721|[End If]|EndIf|1|0|If_Statement||||0x000000|2491|
+1722|Compare Variables|X = 8|1|0|If_Statement|||||2492|
+1723|[End If]|EndIf|1|0|If_Statement||||0x000000|2494|
+1724|Compare Variables|X = 9|1|0|If_Statement|||||2495|
+1725|Break||1|0|Break|||||2497|
+1726|[End If]|EndIf|1|0|If_Statement||||0x000000|2498|
+1727|[Assign Variable]|List := ["Fuse Pets","deep pool fishing","Back"]|1|0|Variable|Expression||||2499|
+1728|Menu|X := List|1|0|Function|||||2500|
+1729|Compare Variables|X = 1|1|0|If_Statement|||||2501|
+1730|[End If]|EndIf|1|0|If_Statement||||0x000000|2503|
+1731|Compare Variables|X = 2|1|0|If_Statement|||||2504|
+1732|[End If]|EndIf|1|0|If_Statement||||0x000000|2506|
+1733|[End If]|EndIf|1|0|If_Statement|||||2507|
+1734|Compare Variables|X = 3|1|0|If_Statement|||||2508|
+1735|Keybinds|_null := |1|0|Function|||||2510|
+1736|[Assign Variable]|x := 0|1|0|Variable|Expression||||2511|
+1737|[End If]|EndIf|1|0|If_Statement|||||2512|
+1738|Compare Variables|X = 4|1|0|If_Statement|||||2513|
+1739|[Assign Variable]|x := 0|1|0|Variable|Expression||||2515|
+1740|[End If]|EndIf|1|0|If_Statement|||||2516|
+1741|[End If]|EndIf|1|0|If_Statement|||||2517|
+1742|Compare Variables|X = 3|1|0|If_Statement|||||2518|
+1743|InputBox|m, Macros, macro made by @sosd35 with help by @bushwhacker420 `nSupport by sending something in the mail, 5, 320, 200, 111, 111, , 0, enter to stop|1|0|InputBox|||||2520|
+1744|[End If]|EndIf|1|0|If_Statement|||||2521|
+1745|Compare Variables|X = 4|1|0|If_Statement|||||2522|
+1746|InputBox|m, Macros, coming soon, 5, 320, 200, 111, 111, , 0, type here|1|0|InputBox|||||2524|
+1747|[End If]|EndIf|1|0|If_Statement|||||2525|
+01748|[MsgBox]|% Accounts[1]|1|0|MsgBox|0||||2526|
+1749|[LoopEnd]|LoopEnd|1|0|Loop|||||2528|
+1750|[LoopEnd]|LoopEnd|1|0|Loop|||||2530|
+
+[PMC Code v5.4.1]|||1|Window,2,Fast,0,1,Input,-1,-1,1|1|MoveClick()
+Context=None|
+Groups=Start:1
+1|[FuncParameter]|x := 0|1|0|FuncParameter|||||1|
+2|[FuncParameter]|y := 0|1|0|FuncParameter|||||1|
+3|[FuncParameter]|delay := 20|1|0|FuncParameter|||||1|
+4|[FuncParameter]|hold := 0|1|0|FuncParameter|||||1|
+5|[FuncParameter]|clickamount := 1|1|0|FuncParameter|||||1|
+6|[FunctionStart]|MoveClick|1|0|UserFunction|Local| / |||1|
+7|Move|%x%, %y%, 0|5|5|Click|Random|1|||3|
+8|[Pause]||1|%delay%|Sleep|||||8|
+9|Compare Variables|clickamount > 0|1|0|If_Statement|||||9|
+10|[LoopStart]|LoopStart|%clickamount%|0|Loop|||||11|
+11|Move|%x%, %y%, 0|1|0|Click|Random|1|||13|
+12|Left Click|Left, , Down|5|0|Click|||||14|
+13|[Pause]||1|%hold%|Sleep|||||18|
+14|Left Click|Left, , Up|5|0|Click|||||19|
+15|[LoopEnd]|LoopEnd|1|0|Loop|||||23|
+16|[End If]|EndIf|1|0|If_Statement|||||24|
+
+[PMC Code v5.4.1]|||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Menu()
+Context=None|
+Groups=Start:1
+1|[FuncParameter]|List|1|0|FuncParameter|||||1|
+2|[FunctionStart]|Menu|1|0|UserFunction|Local| / |||1|
+3|[LoopStart]|LoopStart|50|0|Loop|||||3|
+4|Left Click|Left, , Up|1|0|Click|||||5|
+5|[Assign Variable]|options := |1|0|Variable|Expression||||6|
+6|[Assign Variable]|i := 1|1|0|Variable|Expression||||7|
+7|[Assign Variable]|coloms := 3|1|0|Variable|Expression||||8|
+8|Length|temp := |1|0|Method|List||||9|
+9|[LoopStart]|LoopStart|%temp%|0|Loop|||||10|
+10|[Concatenate Variable]|options .= i|1|0|Variable|Expression||||12|
+11|[Concatenate Variable]|options .= )|1|0|Variable|||||13|
+12|[Concatenate Variable]|options .= List[i]|1|0|Variable|Expression||||14|
+13|StrLen|temp := List[i]|1|0|Function|||||15|
+14|[Subtract Variable]|temp -= 10|1|0|Variable|Expression||||16|
+15|[Multiply Variable]|temp *= -1|1|0|Variable|Expression||||17|
+16|Compare Variables|temp > 0|1|0|If_Statement|||||18|
+17|[LoopStart]|LoopStart|%temp%|0|Loop|||||20|
+18|[Concatenate Variable]|options .= "  "|1|1|Variable|Expression||||22|
+19|[LoopEnd]|LoopEnd|1|0|Loop|||||23|
+20|[End If]|EndIf|1|0|If_Statement|||||24|
+21|[Concatenate Variable]|options .= "	"|1|1|Variable|Expression||||25|
+22|[Add Variable]|i += 1|1|0|Variable|Expression||||26|
+23|[LoopEnd]|LoopStart|1|0|Loop|||||27|
+24|[Assign Variable]|OSX := 50|1|0|Variable|Expression||||28|
+25|[Assign Variable]|OSY := 50|1|0|Variable|Expression||||29|
+26|[Assign Variable]|w := 127|1|0|Variable|Expression||||30|
+27|[Multiply Variable]|w *= coloms|1|0|Variable|Expression||||31|
+28|SplashTextOn|%w%, 200, List, %options%|1|0|SplashTextOn|||||32|
+29|WinGetPos|Win|1|0|WinGetPos||Roblox|||33|
+30|[Add Variable]|OSX += WinX|1|0|Variable|Expression||||34|
+31|[Add Variable]|OSY += WinY|1|0|Variable|Expression||||35|
+32|WinMove|%OSX%, %OSY%, , |1|0|WinMove||List|||36|
+33|Length|len := |1|0|Method|List||||37|
+034|[MsgBox]|%w%`n%options%`n%winX%`,%winY%`n%OSX%`,%OSY%|1|0|MsgBox|0||||38|
+35|[Add Variable]|len += 2|1|0|Variable|Expression||||46|
+036|[MsgBox]|%len%|1|0|MsgBox|0||||48|
+37|[Assign Variable]|Buttons := ["LButton","1","2","3","4","5","6","7","8","9","0","0"]|1|0|Variable|Expression||\ ________     ________     ________     ________     ________    ||50|
+38|[LoopStart]|LoopStart|0|0|Loop|||||52|
+39|[Assign Variable]|i := 0|1|0|Variable|Expression||||54|
+40|[LoopStart]|LoopStart|%len%|0|Loop|||||55|
+41|[Add Variable]|i += 1|1|0|Variable|Expression||||57|
+42|[Assign Variable]|Button := Buttons[i]|1|0|Variable|Expression||||58|
+43|GetKeyState|key, %Button%|1|0|GetKeyState|||||59|
+44|If String Contains|key, D|1|0|If_Statement|||||60|
+045|[MsgBox]|%key%`n%Button%|1|0|MsgBox|0||||62|
+46|[Assign Variable]|picked := button|1|0|Variable|Expression||||68|
+47|Break||1|0|Break|||||70|
+48|[End If]|EndIf|1|0|If_Statement|||||71|
+49|[LoopEnd]|LoopEnd|1|0|Loop|||||72|
+50|If String Contains|button, 0|1|0|If_Statement|||||73|
+51|[Add Variable]|button += i|1|0|Variable|Expression||||75|
+52|[Subtract Variable]|button -= 1|1|0|Variable|Expression||||76|
+53|[End If]|EndIf|1|0|If_Statement|||||77|
+054|[MsgBox]|%button%`n%len%|1|0|MsgBox|0||||78|
+55|Evaluate Expression|button<len-1  Instr(button,"L")|1|0|If_Statement|||||84|
+56|Break||1|0|Break|||||87|
+57|[End If]|EndIf|1|0|If_Statement|||||88|
+58|[LoopEnd]|LoopEnd|1|0|Loop|||||89|
+59|If String Not Contains|button, L|1|0|If_Statement|||||90|
+060|[MsgBox]|%button%|1|0|MsgBox|0||||92|
+61|Break||1|0|Break|||||94|
+62|[End If]|EndIf|1|0|If_Statement|||||96|
+63|MouseGetPos|X, Y|1|0|MouseGetPos|||||97|
+064|[Add Variable]|X += WinX|1|0|Variable|Expression||||98|
+065|[Add Variable]|Y += WinY|1|0|Variable|Expression||||100|
+66|[Assign Variable]|ButtonX := 10|1|0|Variable|Expression||||101|
+67|[Assign Variable]|ButtonY := 25|1|0|Variable|Expression||||103|
+68|[Add Variable]|ButtonX += OSX|1|0|Variable|Expression||||104|
+69|[Add Variable]|ButtonY += OSY|1|0|Variable|Expression||||105|
+70|[Assign Variable]|ButtonX2 := ButtonX|1|0|Variable|Expression||||106|
+71|[Assign Variable]|ButtonY2 := ButtonY|1|0|Variable|Expression||||107|
+72|[Assign Variable]|picked := 0|1|0|Variable|Expression||||108|
+73|[Subtract Variable]|len -= 1|1|0|Variable|Expression||||109|
+74|[LoopStart]|LoopStart|%len%|0|Loop|||||110|
+75|[Add Variable]|picked += 1|1|0|Variable|Expression||||112|
+76|[Add Variable]|ButtonX2 += 128|1|0|Variable|Expression||||113|
+77|[Add Variable]|ButtonY2 += 19|1|0|Variable|Expression||||114|
+078|Move|%ButtonX%, %ButtonY%, 0|1|300|Click|||||115|
+079|Move|%ButtonX2%, %ButtonY2%, 0|1|300|Click|||||118|
+080|[MsgBox]|mouse %X%`,%Y%`nbutton %buttonX%`,%buttonY%`nbutton2 %buttonX2%`,%buttonY2%|1|0|MsgBox|0||||120|
+81|Evaluate Expression|X>=ButtonX && X<=ButtonX2 && Y>=ButtonY && Y<=ButtonY2|1|0|If_Statement|||||126|
+82|Break||1|0|Break|||||129|
+83|[End If]|EndIf|1|0|If_Statement|||||130|
+84|[Assign Variable]|ButtonX := ButtonX2|1|0|Variable|Expression||||131|
+85|Evaluate Expression|picked/coloms=picked//coloms|1|0|If_Statement|||||132|
+086|[MsgBox]|hi|1|0|MsgBox|0||||134|
+87|[Assign Variable]|ButtonY := ButtonY2|1|0|Variable|Expression||||136|
+88|[Assign Variable]|ButtonX := 10|1|0|Variable|Expression||||138|
+89|[Add Variable]|ButtonX += OSX|1|0|Variable|Expression||||139|
+90|[Assign Variable]|ButtonX2 := ButtonX|1|0|Variable|Expression||||140|
+91|[End If]|EndIf|1|0|If_Statement|||||141|
+92|[Assign Variable]|ButtonY2 := ButtonY|1|0|Variable|Expression||||142|
+93|[LoopEnd]|LoopEnd|1|0|Loop|||||143|
+94|Compare Variables|picked < len|1|0|If_Statement|||||144|
+95|Break||1|0|Break|||||146|
+96|[End If]|EndIf|1|0|If_Statement|||||147|
+97|[LoopEnd]|LoopEnd|1|0|Loop|||||148|
+98|SplashTextOff||1|0|SplashTextOff|||||149|
+99|[LoopStart]|LoopStart|25|0|Loop|||||150|
+100|GetKeyState|key, %Button%|1|0|GetKeyState|||||152|
+101|If String Contains|key, D|1|0|If_Statement|||||153|
+102|[Pause]||1|200|Sleep|||||155|
+103|[End If]|EndIf|1|0|If_Statement|||||156|
+104|[LoopEnd]|LoopEnd|1|0|Loop|||||157|
+105|[FuncReturn]|picked|1|0|FuncReturn|||||158|
+106|WinActivate||1|0|WinActivate||ahk_pid %test%|||159|
+107|WinActivate||1|0|WinActivate||ahk_pid %test%|||160|
+
+[PMC Code v5.4.1]|||1|Window,2,Fast,0,1,Input,-1,-1,1|1|ZoneTP()
+Context=None|
+Groups=Start:1
+1|[FuncParameter]|Zone|1|0|FuncParameter|||||1|
+2|[FunctionStart]|ZoneTP|1|0|UserFunction|Local| / |||1|
+3|[Assign Variable]|loop := 1|1|0|Variable|Expression||||3|
+4|MoveClick|_null := 757,142,,,5|1|0|Function|||||4|
+5|[LoopStart]|LoopStart|30|0|Loop|||||5|
+6|WinActivate||1|0|WinActivate||Roblox|||7|
+7|Continue, Continue, FoundX, FoundY|726, 80, 733, 130, 0x538CB8, 20, Fast RGB|1|0|PixelSearch||Window|||8|
+8|If Image/Pixel Found||1|0|If_Statement|||||10|
+9|Continue, Continue, FoundX, FoundY|672, 81, 679, 130, 0xBB8535, 20, Fast RGB|1|0|PixelSearch||Window|||12|
+10|If Image/Pixel Found||1|0|If_Statement|||||14|
+11|Tab|{Tab Down}|1|50|Send|||||16|
+12|Tab|{Tab Up}|1|500|Send|||||18|
+13|[End If]|EndIf|1|0|If_Statement|||||20|
+14|[End If]|EndIf|1|0|If_Statement|||||21|
+15|Continue, Continue, FoundX, FoundY|92, 208, 109, 227, 0x5B8099, 15, Fast RGB|1|0|PixelSearch||Window|||22|
+16|If Image/Pixel Not Found||1|0|If_Statement|||||24|
+17|Break, Continue, FoundX, FoundY|65, 129, 85, 148, 0xDD0F3B, 20, Fast RGB|100|5|PixelSearch||Window|||26|
+18|If Image/Pixel Not Found||1|0|If_Statement|||||34|
+19|MoveClick|_null := 757,142|1|0|Function|||||36|
+20|Break, Continue, FoundX, FoundY|92, 208, 109, 227, 0x5B8099, 15, Fast RGB|100|20|PixelSearch||Window|||37|
+21|[End If]|EndIf|1|0|If_Statement|||||45|
+22|[End If]|EndIf|1|0|If_Statement|||||46|
+23|If Image/Pixel Found||1|0|If_Statement|||||47|
+24|MoveClick|_null := 93,212|1|0|Function|||||49|
+25|Continue, Break, FoundX, FoundY|92, 208, 109, 227, 0x5B8099, 5, Fast RGB|100|20|PixelSearch||Window|||50|
+26|[End If]|EndIf|1|0|If_Statement|||||58|
+27|If String Contains|zone, spawn|1|0|If_Statement|||||59|
+28|MoveClick|_null := 17,227,,100,3|1|0|Function|||||61|
+29|[Pause]||1|5000|Sleep|||||62|
+30|[FuncReturn]|1|1|0|FuncReturn|||||63|
+31|MoveClick|_null := 270,450,,100,3|1|0|Function|||||64|
+32|Break, Continue, FoundX, FoundY|41, 274, 57, 286, 0x070711, 30, Fast RGB|100|20|PixelSearch||Window|||65|
+33|If Image/Pixel Not Found||1|0|If_Statement|||||73|
+34|Continue, Continue, FoundX, FoundY|606, 128, 618, 159, 0xFF155F, 10, Fast RGB|1|0|PixelSearch||Window|||75|
+35|[End If]|EndIf|1|0|If_Statement|||||77|
+36|If Image/Pixel Found||1|0|If_Statement|||||78|
+37|Continue, Break, FoundX, FoundY|41, 274, 57, 286, 0x070711, 30, Fast RGB|200|20|PixelSearch||Window|||80|
+38|MoveClick|_null := 759,142,,50,2|1|0|Function|||||88|
+39|MoveClick|_null := 629,141,,50,2|1|0|Function|||||89|
+40|[End If]|EndIf|1|0|If_Statement|||||90|
+41|[End If]|EndIf|1|0|If_Statement|||||91|
+42|If String Contains|zone, home|1|0|If_Statement|||||92|
+43|MoveClick|_null := 550,197,,100,5|1|0|Function|||||94|
+44|MoveClick|_null := 644,142,,100,5|1|0|Function|||||95|
+45|Return||1|0|Return|||||96|
+46|[End If]|EndIf|1|0|If_Statement|||||97|
+47|If String Contains|zone, #1|1|0|If_Statement|||||98|
+48|MoveClick|_null := 145,231,,100,5|1|0|Function|||||100|
+49|MoveClick|_null := 757,142,,100,5|1|0|Function|||||101|
+50|[Pause]||1|5000|Sleep|||||102|
+51|Return||1|0|Return|||||103|
+52|[End If]|EndIf|1|0|If_Statement|||||104|
+53|If String Contains|zone, best|1|0|If_Statement|||||105|
+54|MoveClick|_null := 15,232,,100,5|1|0|Function|||||107|
+55|[Pause]||1|5000|Sleep|||||108|
+56|Return||1|0|Return|||||109|
+57|[End If]|EndIf|1|0|If_Statement|||||110|
+58|Compare Variables|zone = 0|1|0|If_Statement|||||111|
+59|MoveClick|_null := 33,270,,50,10|1|0|Function|||||113|
+60|MoveClick|_null := 317,454,,50,10|1|0|Function|||||114|
+61|Return||1|0|Return|||||115|
+62|[End If]|EndIf|1|0|If_Statement|||||116|
+63|If String Contains|zone, trade|1|0|If_Statement|||||117|
+64|MoveClick|_null := 17,407,,100,3|1|0|Function|||||119|
+65|Break, Continue, FoundX, FoundY|610, 185, 622, 196, 0x3CC8FF, 3, Fast RGB|100|20|PixelSearch||Window|||120|
+66|MoveClick|_null := 350,438,,100,3|1|0|Function|||||128|
+67|Return||1|0|Return|||||129|
+68|[End If]|EndIf|1|0|If_Statement|||||130|
+69|Break, Continue, FoundX, FoundY|396, 189, 420, 209, 0x78F3FB, 5, Fast RGB|1|0|PixelSearch||Window|||131|
+70|Delete|{Delete}|1|0|Send|||||135|
+71|MoveClick|_null := 625,138|1|0|Function|||||136|
+72|[Pause]||1|100|Sleep|||||137|
+73|Break, Continue, xx, yy|622, 134, 699, 147, 0xAFAFAF, 10, Fast RGB|100|5|PixelSearch||Window|||138|
+74|[Text]|%zone%|1|0|SendRaw|||||146|
+75|Break, Continue, xx, yy|614, 132, 697, 145, 0x1E1E1E, 10, Fast RGB|50|5|PixelSearch||Window|||147|
+76|[LoopStart]|LoopStart|25|0|Loop|||||155|
+77|Break, Continue, FoundX, FoundY|364, 200, 375, 231, 0x78F3FB, 5, Fast RGB|1|0|PixelSearch||Window|||157|
+78|Move, Break, FoundX, FoundY|392, 180, 420, 202, 0x9FFC1B, 10, Fast RGB|1|0|PixelSearch||Window|||161|
+79|If Image/Pixel Found||1|0|If_Statement|||||167|
+80|[Add Variable]|loop += 1|1|0|Variable|Expression||||169|
+81|Move|Rel 3, 3, 0|5|5|Click|||||170|
+82|Left Click|Left, 1, |1|0|Click|||||175|
+83|[End If]|EndIf|1|0|If_Statement|||||176|
+84|[LoopEnd]|LoopEnd|1|0|Loop|||||177|
+85|Continue, Continue, FoundX, FoundY|364, 200, 375, 231, 0x78F3FB, 5, Fast RGB|1|0|PixelSearch||Window|||178|
+86|If Image/Pixel Found||1|0|If_Statement|||||180|
+87|MoveClick|_null := 759,142,,50,10|1|0|Function|||||182|
+88|MoveClick|_null := 629,141,,50,10|1|0|Function|||||183|
+089|[MsgBox]|%loop%`n%zone%|1|0|MsgBox|0||||184|
+90|If String Contains|zone, mega|1|0|If_Statement|||||190|
+091|SoundBeep||1|0|SoundBeep|||||193|
+92|Compare Variables|loop >= 2|1|0|If_Statement|||||195|
+093|[Pause]||1|1500|Sleep|||||198|
+94|q|{q}|1|300|Send|||||200|
+95|d|{d Down}|1|930|Send|||||203|
+96|d|{d Up}|1|0|Send|||||205|
+97|q|{q}|1|300|Send|||||206|
+98|[End If]|EndIf|1|0|If_Statement|||||208|
+99|[End If]|EndIf|1|0|If_Statement|||||209|
+100|[FuncReturn]|1|1|0|FuncReturn|||||210|
+101|[End If]|EndIf|1|0|If_Statement|||||211|
+102|[LoopEnd]|LoopEnd|1|0|Loop|||||212|
+103|MoveClick|_null := 759,142,,50,10|1|0|Function|||||213|
+104|MoveClick|_null := 629,141,,50,10|1|0|Function|||||214|
+0105|[MsgBox]|%loop%`n%zone%|1|0|MsgBox|0||||215|
+106|If String Contains|zone, mega|1|0|If_Statement|||||221|
+0107|SoundBeep||1|0|SoundBeep|||||224|
+108|Compare Variables|loop >= 2|1|0|If_Statement|||||226|
+0109|[Pause]||1|1500|Sleep|||||229|
+110|q|{q}|1|300|Send|||||231|
+111|d|{d Down}|1|930|Send|||||234|
+112|d|{d Up}|1|0|Send|||||236|
+113|q|{q}|1|300|Send|||||237|
+114|[End If]|EndIf|1|0|If_Statement|||||239|
+115|[End If]|EndIf|1|0|If_Statement|||||240|
+116|[FuncReturn]|0|1|0|FuncReturn|||||241|
+
+[PMC Code v5.4.1]|||1|Window,2,Fast,0,1,Input,-1,-1,1|1|MultiAccount()
+Context=None|
+Groups=Start:1
+1|[FunctionStart]|MultiAccount|1|0|UserFunction|Local| / |||1|
+2|[Assign Variable]|AccountList := []|1|0|Variable|Expression||||3|
+3|[Assign Variable]|i := 0|1|0|Variable|Expression||||4|
+4|WinActivate||1|0|WinActivate||Roblox|||5|
+5|[LoopStart]|LoopStart|50|0|Loop|||||6|
+6|[Add Variable]|i += 1|1|0|Variable|Expression||||8|
+7|WinGet|test, ProcessName|1|0|WinGet||A|||9|
+8|If String Not Contains|test, roblox|1|0|If_Statement|||||10|
+9|Break||1|0|Break|||||12|
+10|[End If]|EndIf|1|0|If_Statement|||||13|
+11|WinGet|account, PID|1|0|WinGet||A|||14|
+12|Push|_null := account|1|0|Method|AccountList||||15|
+13|[Assign Variable]|a := AccountList[i]|1|0|Variable|Expression||||16|
+014|[MsgBox]|Acount: %account%`nA: %a%|1|0|MsgBox|262144||||17|
+15|WinRestore||1|0|WinRestore||A|||23|
+16|WinMove|%NA%, %NA%, 816, 638|1|0|WinMove||A|||25|
+17|WinMinimize||1|333|WinMinimize||A|||26|
+18|[LoopEnd]|LoopEnd|1|0|Loop|||||28|
+19|[Assign Variable]|Len := AccountList.Length()|1|0|Variable|Expression||||29|
+20|[Assign Variable]|i := 1|1|0|Variable|Expression||||30|
+21|[LoopStart]|LoopStart|%Len%|0|Loop|||||31|
+22|[Assign Variable]|a := Accounts[i]|1|0|Variable|Expression||||33|
+23|WinActivate||1|0|WinActivate||ahk_pid %a%|||34|
+24|[Add Variable]|i += 1|1|0|Variable|Expression||||35|
+25|[LoopEnd]|LoopEnd|1|0|Loop|||||36|
+26|[FuncReturn]|AccountList|1|0|FuncReturn|||||37|
+
+[PMC Code v5.4.1]|||1|Window,2,Fast,0,1,Input,-1,-1,1|1|event()
+Context=None|
+Groups=Start:1
+1|[FuncParameter]|Accounts|1|0|FuncParameter|||||1|
+2|[FunctionStart]|event|1|0|UserFunction|Local| / |||1|
+3|[Assign Variable]|len := Accounts.Length()|1|0|Variable|Expression||||3|
+4|[LoopStart]|LoopStart|0|0|Loop|||||4|
+5|[Assign Variable]|i := 1|1|0|Variable|Expression||||6|
+6|[LoopStart]|LoopStart|500|0|Loop|||||7|
+7|[Assign Variable]|a := Accounts[i]|1|0|Variable|Expression||||9|
+8|WinActivate||1|0|WinActivate||ahk_pid %a%|||10|
+9|WinRestore||1|0|WinRestore||A|||11|
+10|r|{r}|1|0|Send|||||12|
+11|Continue, Continue, FoundX, FoundY|301, 34, 510, 155, 0xFFA700, 10, Fast RGB|1|0|PixelSearch||Window|||13|
+12|If Image/Pixel Found||1|0|If_Statement|||||15|
+13|MoveClick|_null := FoundX,FoundY|1|0|Function|||||17|
+14|[Else]|Else|1|0|If_Statement|||||18|
+15|Continue, Continue, FoundX, FoundY|303, 35, 509, 156, 0xDC3700, 10, Fast RGB|1|0|PixelSearch||Window|||21|
+16|If Image/Pixel Found||1|0|If_Statement|||||23|
+17|MoveClick|_null := FoundX,FoundY|1|0|Function|||||25|
+18|[Else]|Else|1|0|If_Statement|||||26|
+19|Continue, Continue, FoundX, FoundY|304, 36, 510, 157, 0x7BFF00, 10, Fast RGB|1|0|PixelSearch||Window|||29|
+20|If Image/Pixel Found||1|0|If_Statement|||||31|
+21|MoveClick|_null := FoundX,FoundY|1|0|Function|||||33|
+22|[Else]|Else|1|0|If_Statement|||||34|
+23|Continue, Continue, FoundX, FoundY|313, 32, 507, 157, 0x595A81, 10, Fast RGB|1|0|PixelSearch||Window|||37|
+24|If Image/Pixel Found||1|0|If_Statement|||||39|
+25|MoveClick|_null := FoundX,FoundY|1|0|Function|||||41|
+26|[End If]|EndIf|1|0|If_Statement|||||42|
+27|[End If]|EndIf|1|0|If_Statement|||||43|
+28|[End If]|EndIf|1|0|If_Statement|||||44|
+29|[End If]|EndIf|1|0|If_Statement|||||45|
+30|[LoopEnd]|LoopEnd|1|0|Loop|||||46|
+31|[LoopStart]|LoopStart|%len%|0|Loop|||||47|
+32|[Add Variable]|i += 1|1|0|Variable|Expression||||49|
+33|[Assign Variable]|a := Accounts[i]|1|0|Variable|Expression||||50|
+34|WinActivate||1|0|WinActivate||ahk_pid %a%|||51|
+35|WinRestore||1|0|WinRestore||A|||52|
+36|r|{r}|1|0|Send|||||53|
+37|[LoopEnd]|LoopEnd|1|0|Loop|||||54|
+38|[LoopEnd]|LoopEnd|1|0|Loop|||||55|
+
