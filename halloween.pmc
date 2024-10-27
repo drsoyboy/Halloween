@@ -2047,19 +2047,19 @@ Groups=Start:1
 8|WinActivate||1|0|WinActivate||ahk_pid %a%|||10|
 9|WinRestore||1|0|WinRestore||A|||11|
 10|r|{r}|1|0|Send|||||12|
-11|Continue, Continue, FoundX, FoundY|301, 34, 510, 155, 0xFFA700, 10, Fast RGB|1|0|PixelSearch||Window|||13|
+11|Continue, Continue, FoundX, FoundY|301, 40, 510, 155, 0xFFA700, 10, Fast RGB|1|0|PixelSearch||Window|||13|
 12|If Image/Pixel Found||1|0|If_Statement|||||15|
 13|MoveClick|_null := FoundX,FoundY|1|0|Function|||||17|
 14|[Else]|Else|1|0|If_Statement|||||18|
-15|Continue, Continue, FoundX, FoundY|303, 35, 509, 156, 0xDC3700, 10, Fast RGB|1|0|PixelSearch||Window|||21|
+15|Continue, Continue, FoundX, FoundY|303, 40, 509, 156, 0xDC3700, 10, Fast RGB|1|0|PixelSearch||Window|||21|
 16|If Image/Pixel Found||1|0|If_Statement|||||23|
 17|MoveClick|_null := FoundX,FoundY|1|0|Function|||||25|
 18|[Else]|Else|1|0|If_Statement|||||26|
-19|Continue, Continue, FoundX, FoundY|304, 36, 510, 157, 0x7BFF00, 10, Fast RGB|1|0|PixelSearch||Window|||29|
+19|Continue, Continue, FoundX, FoundY|304, 40, 510, 157, 0x7BFF00, 10, Fast RGB|1|0|PixelSearch||Window|||29|
 20|If Image/Pixel Found||1|0|If_Statement|||||31|
 21|MoveClick|_null := FoundX,FoundY|1|0|Function|||||33|
 22|[Else]|Else|1|0|If_Statement|||||34|
-23|Continue, Continue, FoundX, FoundY|313, 32, 507, 157, 0x595A81, 10, Fast RGB|1|0|PixelSearch||Window|||37|
+23|Continue, Continue, FoundX, FoundY|313, 40, 507, 157, 0x595A81, 10, Fast RGB|1|0|PixelSearch||Window|||37|
 24|If Image/Pixel Found||1|0|If_Statement|||||39|
 25|MoveClick|_null := FoundX,FoundY|1|0|Function|||||41|
 26|[End If]|EndIf|1|0|If_Statement|||||42|
